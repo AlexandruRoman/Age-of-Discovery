@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html>
+         <head>
+
+
+<link rel="stylesheet" type="text/css" href="harta.css"> 
+<link rel="stylesheet" type="text/css" href="altele.css"> 
+<link rel="stylesheet" type="text/css" href="meniu.css">
+<link rel="stylesheet" type="text/css" href="arhiva.css"> 
+<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+<script src='jquery.js'></script>
+
+
+<script>
+$(document).ready(function(){
+
+              $("div.ptharta").click(function(){
+
+$("div.harta").animate  ({top: '0px' },2000);
+$("div.meniu").animate  ({top: '520px' },2000);
+
+
+                                                  });
+          //Columb
+
+$('div.columb').hover(function(){
+$('div.columb').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.columb').animate({
+   opacity:'0.7' },10);
+  }); 
+
+           //James
+
+$('div.james').hover(function(){
+$('div.james').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.james').animate({
+   opacity:'0.7' },10);
+  }); 
+           //Magellan
+$('div.magellan').hover(function(){
+$('div.magellan').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.magellan').animate({
+   opacity:'0.7' },10);
+  }); 
+
+         //Minimize
+$('div.minimize').hover(function(){
+$('div.minimize').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.minimize').animate({
+   opacity:'0.7' },10);
+  }); 
+
+$('div.minimize').click(function(){
+
+$('div.harta').animate({top:'-760px'},2000);
+$('div.meniu').animate({top:'-335px'},2000);
+
+});
+
+
+
+$('div.columb').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videomagellan').fadeOut();
+$('div.b1').fadeIn(300);
+$('div.b2').fadeIn(300);
+$('div.b3').fadeIn(300);
+$('div.b4').fadeIn(300);
+});
+
+$('div.magellan').click(function(){
+$('.videocolumb').fadeOut();
+$('.videomagellan').fadeIn(300);
+$('div.b1').fadeOut();
+$('div.b2').fadeOut();
+$('div.b3').fadeOut();
+$('div.b4').fadeOut();
+
+});
+$('div.b1').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b2').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeIn(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b3').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeIn(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b4').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeIn(300);
+});
+
+
+$('div.dictionar2').click(function(){
+$('div.dictionar').show();
+$('div.dictionarclose').show();
+});
+
+$('div.dictionarclose').click(function(){
+$('div.dictionar').hide();
+$('div.dictionarclose').hide();
+});
+
+
+$('div.exploratoriimg').hover(function(){
+$('div.exploratori').show();},
+    function(){
+$('div.exploratori').hide();
+  }); 
+
+
+
+$('div.perioadeimg').hover(function(){
+$('div.perioade').show();},
+    function(){
+$('div.perioade').hide();
+  }); 
+
+
+
+$('div.obiecteimg').hover(function(){
+$('div.obiecte').show();},
+    function(){
+$('div.obiecte').hide();
+  }); 
+
+
+
+$('div.imperiiimg').hover(function(){
+$('div.imperii').show();},
+    function(){
+$('div.imperii').hide();
+  }); 
+
+
+$('div.closearhiva').click(function(){
+$('div.cadruarhiva').hide();
+});
+
+$('div.arhiva').click(function(){
+$('div.cadruarhiva').show();
+});
+
+
+
+
+$('div.dreapta1').click(function(){
+
+$('div.dreapta1').hide();
+$('div.dreapta2').show();
+$('div.stanga1').show();
+$('div.primii').animate({
+left:'5%'
+},2000);
+
+$('div.inceputul').animate({
+ left: '-100%'
+},2000);
+
+});
+
+
+
+
+
+
+$('div.dreapta2').click(function(){
+$('div.dreapta2').hide();
+$('div.dreapta3').show();
+$('div.stanga1').hide();
+$('div.stanga2').show();
+$('div.per1').animate({
+left:'5%'
+},2000);
+
+$('div.primii').animate({
+ left: '-100%'
+},2000);
+
+
+});
+
+
+$('div.dreapta3').click(function(){
+$('div.dreapta3').hide();
+$('div.dreapta4').show();
+$('div.stanga2').hide();
+$('div.stanga3').show();
+$('div.per2').animate({
+left:'5%'
+},2000);
+
+$('div.per1').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+$('div.dreapta4').click(function(){
+$('div.dreapta4').hide();
+$('div.stanga3').hide();
+$('div.stanga4').show();
+$('div.urmari').animate({
+left:'5%'
+},2000);
+
+$('div.per2').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+$('div.stanga1').click(function(){
+
+$('div.stanga1').hide();
+$('div.dreapta1').show();
+$('div.dreapta2').hide();
+$('div.inceputul').animate({
+ left: '5%'
+},2000);
+
+$('div.primii').animate({
+left:'100%'
+},2000);
+
+
+});
+
+
+$('div.stanga2').click(function(){
+$('div.stanga2').hide();
+$('div.stanga1').show();
+$('div.dreapta2').show();
+$('div.dreapta3').hide();
+$('div.primii').animate({
+ left: '5%'
+},2000);
+
+$('div.per1').animate({
+left:'100%'
+},2000);
+
+
+
+});
+
+
+$('div.stanga3').click(function(){
+$('div.stanga3').hide();
+$('div.dreapta4').hide();
+$('div.dreapta3').show();
+$('div.stanga2').show();
+$('div.per1').animate({
+ left: '5%'
+},2000);
+
+$('div.per2').animate({
+left:'100%'
+
+},2000);
+
+
+});
+
+$('div.stanga4').click(function(){
+$('div.stanga4').hide();
+$('div.stanga3').show();
+$('div.dreapta4').show();
+$('div.per2').animate({
+ left: '5%'
+},2000);
+
+$('div.urmari').animate({
+left:'100%'
+
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+</script>
+
+<script> 
+$(function(){
+	$('div.james, div.columb,div.magellan').mouseover(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Hover.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+
+$('div.james, div.columb,div.magellan').click(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Click.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+ 
+});
+</script>
+
+         </head>
+
+
+                       <body>
+
+
+
+
+
+
+
+
+
+     <div class="meniu" >
+<div class="columb"></div>
+<div class="magellan"></div>
+<div class="ptharta"></div>
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+     </div>
+
+     <div class="harta">
+<div class="minimize"></div>
+
+
+
+<video class="videocolumb" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 1.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb2" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 2.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb3" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 3.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb4" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 4.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videomagellan" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Magellan.mp4" type="video/mp4">
+  <source src="Video/Magellan.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+     </div>
+
+     <div class="cautareexploratori">
+
+<div class="cadru">
+<div class="cautarecolumb"></div>
+<div class="cautarejames"></div>
+</div>
+      </div>
+
+<div class="arhiva"></div>
+<div class="dictionar2"></div>
+<a href="INDEX.html"><div class="cautare" ></div></a>
+<a href="Test.html"><div class="test" ></div></a>
+<a href="Galerie.html"><div class="galerie" ></div></a>
+<div class="titlu"></div>
+
+
+
+
+
+
+
+<div class="dictionar" style="display:none;">
+<div class="dictionarclose"></div>
+<script type="text/javascript" src="http://www.webdex.ro/js/search-widget.js" style="position:fixed;"></script>
+</div>
+
+
+
+
+
+
+<div class="casetatext">
+<br>
+<center><div class="fundaltitlu">James Cook</div></center>
+<br><hr><br>
+
+<h1>1. Pasiunea pentru navigatie</h1>
+<br><br>
+<p>Explorator englez, navigator si cartograf, James Cook a fost remarcat cand a devenit Capitanul Marinei Regale. El a fost primul care a explorat Newfoundland-ul (insula si provincie in Canada) inainte sa faca trei calatorii in Oceanul Pacific. In timpul acestor calatorii James Cook a descoperit primul contact european cu coasta de est a Australiei si Insulele Hawaii. El a fost primul care a finalizat o circumnavigatie in Noua Zeelanda. </p>
+<img src="Imagini/Cook.png" style="float:right" width="400" height="530"></img>
+
+<p>Nascut pe 7 noiembrie 1728, in satul Marton din Yorkshire, James Cook a fost fiul unui muncitor agricol scotian, James Cook si a sotiei lui Grace. La varsta de 8 ani, familia lui Cook s-a mutat in Great Ayton. James a facut scoala locala timp de cinci ani, dupa care a inceput sa lucreze cu tatal sau. Si-a dezvoltat gustul pentru aventura in tinerete, atunci cand a urcat pe dealul Roseberry Topping. In 1745, Cook s-a mutat in satul Stathles unde s-a implicat intr-o afacere de bacanie. In timp ce privea vitrinele, a observat o mare de care a fost foarte atras. Probabil ca de aici a inceput sa se dezvolte dragostea lui pentru domeniul nautic. In aproximativ doi ani de atunci, el a fost transferat intr-un oras din apropiere numit Whitby. Acolo a fost introdus lui Ioan si Henry Walker, armatori in afaceri cu nave. </p>
+
+<p>In Whitby, James Cook a servit in marina comerciala. La prima sa misiune pe vasul carbonifer Freelove, a petrecut multi ani calatorind intre Londra si Tyne. De asemenea, el s-a implicat in invatarea algebrei, geometriei, trigonometriei, astronomiei si navigatiei. Dupa trei ani, el a luat nava de tranzactionare pana la Marea Baltica. In 1755, a ales sa lucreze pentru Marina Regala si a participat la Razboiul de sapte ani. In timpul acestui razboi, James Cook a participat la asediul orasului Quebec, cartografiind punctul de intrare la raul Saint Lawrence. Performanta sa de cartografiere a coastei Newfoundland-ului s-a dovedit a fi un progres in cariera sa. In 1755, a devenit un marinar capabil si mai tarziu a fost promovat ofiter al comandantului. Pana in 1757, el a fost eligibil sa conduca o nava a flotei Regelui.</p>
+<br><hr><br>
+
+<h1>2. Implicarea navigatorului in noi descoperiri</h1>
+<br><br>
+<p>Calatoria sa pe Oceanul Pacific pentru a inregistra tranzitul lui Venus peste discul Soarelui a marcat primul sau voiaj. A inceput calatoria in 1768, a pornit din Anglia, a inconjurat Cape Horn si a navigat spre vest de-a lungul Pacificului si a ajuns in Tahiti pe 13 aprilie 1769. James Cook a cartografiat apoi intreaga coasta aNoii Zeelande. A ajuns pe coasta Australiei in 1770 facand prima expeditie europeana spre est. Pe 29 aprilie, Cook a ajuns la suprafata cunoscuta acum sub numele de Kurnell. Nava s-a confruntat cu un accident in timp ce naviga spre nord. Reparatiile navei au durat in jur de sapte saptamani, amanand calatoria. Luptand cu dificultatile ivite in timpul calatoriei sale, James Cook a ajuns in Anglia pe 12 iulie 1771. </p>
+<br><img src="Imagini/james.png" style="float:left" width="600" height="300"></img>
+<p>Calatorie sa ca si comandant in cercetarea Terrei Australis a fost cel de-al doilea voiaj, in care a circumnavigat globul la o mare altitudine in Sud. Calatoria sa la aceasta altitudine l-a facut prima persoana care a traversat Cercul Antarctic. La intoarcere, a castigat o promovare la rangul de capitan si i s-a dat pensionare onorata de la Marina Regala. Curand a devenit mandrul castigator al medaliei de aur Copley.</p>
+<br>
+<p>Zelul sau pentru nautica l-a determinat sa-si planifice al treilea voiaj in 1776. A pornit in cautarea faimosului Pasaj de Nord-Vest. In 1778, a devenit primul din Europa care a ajuns in Insulele Hawaii. A calatorit de-a lungul coastei Californiei cartografiind intrarea in Alaska si a schitat intinderea acesteia. In 1779, s-a intors in Hawaii unde nu a fost bine primit. Se crede ca acolo a fost lovit de catre sateni si a fost injunghiat mortal.</p>
+<br>
+<h1>3. Cronologia evenimentelor importante din viata lui James Cook</h1>
+<br>
+<p style="text-align:left;">1728:  James Cook s-a nascut pe 7 noiembrie 1728.</p>
+<p style="text-align:left;">1755:  S-a oferit voluntar la Marina Regala.</p>
+<p style="text-align:left;">1757:  A absolvit cu succes examenul de comandant si a obtinut calificarea pentru a se ocupa de navele din flota regelui.</p>
+<p style="text-align:left;">1762:  Pe 21 decembrie, s-a casatorit cu Elizabeth Batts, fiica unuia dintre mentorii sai, Samuel Batts.</p>
+<p style="text-align:left;">1766:  James Cook a fost angajat de catre Societatea Regala sa calatoreasca in Pacific pentru a examina tranzitul lui Venus de-a lungul Soarelui. A inceput aceasta expeditie in 1768.</p>
+<p style="text-align:left;">1773:  La 17 ianuarie, in timpul celei de-a doua calatorii a sa, Cook a trecut Cercul Antarctic si a devenit primul om care a facut acest lucru.</p>
+<p style="text-align:left;">1778:  Acest an a marcat vizita sa in Insulele Hawaii, fiind primul european care a ajuns aici.</p>
+<p style="text-align:left;">1799:  James Cook a murit pe 14 februarie 1799. </p><br>
+
+<p>Viata lui James Cook a fost intr-adevar o calatorie plina de aventuri. Expeditiile sale nautice au adus o contributie uriasa stiintei europene in ce priveste cunoasterea Oceanului Pacific. Si-a folosit abilitatile de navigator in descoperirea multor noi suprafete si a creat harti exacte ale regiunilor descoperite. In navigatiile lui nu a dus lipsa de curaj si calitati de lider, fiind amintit cu apreciere si respect si in ziele noastre.</p>
+
+
+
+
+
+
+
+
+
+
+
+<br><hr><br>
+<center><div class="fundaltitlu">James Cook</div></center>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cadruarhiva" style="display:none;">
+
+<div class="closearhiva"></div>
+
+<div class="inceputul">
+<a href="Cauze.html"><div class="fundaltema">Cauzele marilor descoperiri</div></a>
+<a href="Obiecte.html"><div class="fundaltema">Instrumente de navigatie descoperite ce au favorizat inceputul explorarilor</div></a>
+</div>
+
+<div class="primii">
+<a href="Calatori%20in%20Antichitate.html"><div class="fundaltema2">Calatori in antichitate</div></a>
+<a href="Vikingii%20descopera%20America.html"><div class="fundaltema2">Vikingii descopera America</div></a>
+<a href="Marco%20Polo.html"><div class="fundaltema2">Marco Polo calatoreste in China</div></a>
+</div>
+
+<div class="per1">
+<a href="Columb.html"><div class="fundaltema">Columb traverseaza Oceanul Atlantic</div></a>
+<a href="Vasco%20da%20Gama.html"><div class="fundaltema">Vasco da Gama ajunge in India pe mare</div></a>
+<a href="Magellan.html"><div class="fundaltema">Magellan navigheaza in jurul lumii</div></a>
+<a href="Pizarro%20cucereste%20Imperiul%20Inca.html"><div class="fundaltema">Pizzaro cucereste Imperiul Inca</div></a>
+<a href="Hernan%20Cortes.html"><div class="fundaltema">Hernan Cortes cucereste Imperiul Aztec</div></a>
+<a href="Epoca%20Exploratorilor.html"><div class="fundaltema">Scurt rezumat al epocii exploratorilor</div></a>
+</div>
+
+<div class="per2">
+
+<a href="La%20Salle%20navigheaza%20pe%20fluviul%20Mississippi.html"><div class="fundaltema2">La Salle navigheaza pe fluviul Mississippi</div></a>
+<a href="James%20Cook.html"><div class="fundaltema2">Capitanul Cook ajunge in Marile Sudului</div></a>
+<a href="Livingstone.html"><div class="fundaltema2">In Africa impreuna cu Livingstone</div></a>
+<a href="Shakleton.html"><div class="fundaltema2">Uimitoarea aventura a lui Shackleton</div></a>
+</div>
+
+<div class="urmari">
+<a href="Urmari.html"><div class="fundaltema">Castigul Europenilor</div></a>
+<a href="Portugalia.html"><div class="fundaltema">Imperiul colonial portughez</div></a>
+<a href="Spania.html"><div class="fundaltema">Imperiul colonial spaniol</div></a>
+</div>
+<div class="dreapta1"></div>
+<div class="dreapta2"></div>
+<div class="dreapta3"></div>
+<div class="dreapta4"></div>
+<div class="stanga1"></div>
+<div class="stanga2"></div>
+<div class="stanga3"></div>
+<div class="stanga4"></div>
+</div>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                       </body>
+
+
+
+</html>

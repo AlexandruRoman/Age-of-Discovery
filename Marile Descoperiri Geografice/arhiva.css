@@ -1,0 +1,346 @@
+div.cadruarhiva
+{
+background-image:url('Arhiva/fundal.png');
+background-size:100% 100%;
+position:fixed;
+width:100%;
+height:650px;
+ left: 0;
+top:50%; 
+margin-top: -325px;
+z-index:41;
+}
+
+div.closearhiva
+{
+background-image:url('Icons/minimize.png');
+background-size:100% 100%;
+position:absolute;
+width:50px;
+height:50px;
+left:50%;
+margin-left:-25px;
+top:-25px;
+z-index:42;
+cursor:url("Cursor/Hand.cur");
+opacity:0.7;
+}
+div.closearhiva:hover
+{
+
+opacity:1.0;
+}
+
+
+
+div.inceputul
+{
+background-image:url('Arhiva/Inceputul.png');
+background-size:100% 100%;
+position:absolute;
+width:90%;
+height:90%;
+ left: 5%;
+top:5%; 
+opacity:0.9;
+
+z-index:41;
+}
+div.inceputul:hover
+{
+opacity:1.0;
+}
+
+div.primii
+{
+background-image:url('Arhiva/primii.png');
+background-size:100% 100%;
+position:absolute;
+width:90%;
+height:90%;
+ left: 100%;
+top:5%; 
+opacity:0.9;
+z-index:41;
+}
+div.primii:hover
+{
+opacity:1.0;
+}
+
+
+div.per1
+{
+background-image:url('Arhiva/per1.png');
+background-size:100% 100%;
+position:absolute;
+width:90%;
+height:90%;
+ left: 100%;
+top:5%; 
+opacity:0.9;
+z-index:41;
+}
+div.per1:hover
+{
+opacity:1.0;
+}
+
+
+div.per2
+{
+background-image:url('Arhiva/per2.png');
+background-size:100% 100%;
+position:absolute;
+width:90%;
+height:90%;
+ left: 100%;
+top:5%; 
+opacity:0.9;
+z-index:41;
+}
+div.per2:hover
+{
+opacity:1.0;
+}
+
+div.urmari
+{
+background-image:url('Arhiva/urmari.png');
+background-size:100% 100%;
+position:absolute;
+width:90%;
+height:90%;
+ left: 100%;
+top:5%; 
+opacity:0.9;
+z-index:41;
+}
+div.urmari:hover
+{
+opacity:1.0;
+}
+
+
+div.dreapta1
+{
+background-image:url('Arhiva/dreapta.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ right: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+}
+div.dreapta1:hover
+{
+opacity:1.0;
+}
+
+div.dreapta2
+{
+background-image:url('Arhiva/dreapta.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ right: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.dreapta2:hover
+{
+opacity:1.0;
+}
+
+div.dreapta3
+{
+background-image:url('Arhiva/dreapta.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ right: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.dreapta3:hover
+{
+opacity:1.0;
+}
+
+div.dreapta4
+{
+background-image:url('Arhiva/dreapta.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ right: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.dreapta4:hover
+{
+opacity:1.0;
+}
+
+
+div.stanga1
+{
+background-image:url('Arhiva/stanga.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ left: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.stanga1:hover
+{
+opacity:1.0;
+}
+
+div.stanga2
+{
+background-image:url('Arhiva/stanga.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ left: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.stanga2:hover
+{
+opacity:1.0;
+}
+
+div.stanga3
+{
+background-image:url('Arhiva/stanga.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ left: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.stanga3:hover
+{
+opacity:1.0;
+}
+
+div.stanga4
+{
+background-image:url('Arhiva/stanga.png');
+background-size:100% 100%;
+position:absolute;
+width:5%;
+height:100%;
+ left: 0px;
+top:0px; 
+opacity:0.7;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+display:none;
+}
+div.stanga4:hover
+{
+opacity:1.0;
+}
+div.fundaltema
+{
+background-image:url('Arhiva/fundaltema2.png');
+background-size:100% 100%;
+position:relative;
+width:55%;
+height:auto;
+left: 0px;
+top:10px; 
+opacity:0.9;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:30px;
+padding:10px;
+margin-top:20px;
+margin-bottom:20px;
+margin-left:10px;
+}
+div.fundaltema:hover
+{
+opacity:1.0;
+color:white;
+}
+
+div.fundaltema2
+{
+background-image:url('Arhiva/fundaltema2.png');
+background-size:100% 100%;
+position:relative;
+width:55%;
+height:auto;
+left: 40%;
+top:10px; 
+opacity:0.9;
+cursor:url('Cursor/Hand.cur');
+z-index:42;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:30px;
+padding:10px;
+margin-top:20px;
+margin-bottom:20px;
+margin-left:10px;
+}
+div.fundaltema2:hover
+{
+opacity:1.0;
+color:white;
+}
+
+div.fundaltema3
+{
+background-image:url('Arhiva/fundaltema2.png');
+background-size:100% 100%;
+background-repeat:no-repeat;
+position:relative;
+width:50%;
+height:auto;
+z-index:3;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:white;
+font-size:40px;
+padding:5px;
+
+
+}

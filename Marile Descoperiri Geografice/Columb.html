@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html>
+         <head>
+
+
+<link rel="stylesheet" type="text/css" href="harta.css"> 
+<link rel="stylesheet" type="text/css" href="altele.css"> 
+<link rel="stylesheet" type="text/css" href="meniu.css">
+<link rel="stylesheet" type="text/css" href="arhiva.css"> 
+<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+<script src='jquery.js'></script>
+
+
+<script>
+$(document).ready(function(){
+
+              $("div.ptharta").click(function(){
+
+$("div.harta").animate  ({top: '0px' },2000);
+$("div.meniu").animate  ({top: '520px' },2000);
+
+
+                                                  });
+          //Columb
+
+$('div.columb').hover(function(){
+$('div.columb').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.columb').animate({
+   opacity:'0.7' },10);
+  }); 
+
+           //James
+
+$('div.james').hover(function(){
+$('div.james').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.james').animate({
+   opacity:'0.7' },10);
+  }); 
+           //Magellan
+$('div.magellan').hover(function(){
+$('div.magellan').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.magellan').animate({
+   opacity:'0.7' },10);
+  }); 
+
+         //Minimize
+$('div.minimize').hover(function(){
+$('div.minimize').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.minimize').animate({
+   opacity:'0.7' },10);
+  }); 
+
+$('div.minimize').click(function(){
+
+$('div.harta').animate({top:'-760px'},2000);
+$('div.meniu').animate({top:'-335px'},2000);
+
+});
+
+
+
+$('div.columb').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videomagellan').fadeOut();
+$('div.b1').fadeIn(300);
+$('div.b2').fadeIn(300);
+$('div.b3').fadeIn(300);
+$('div.b4').fadeIn(300);
+});
+
+$('div.magellan').click(function(){
+$('.videocolumb').fadeOut();
+$('.videomagellan').fadeIn(300);
+$('div.b1').fadeOut();
+$('div.b2').fadeOut();
+$('div.b3').fadeOut();
+$('div.b4').fadeOut();
+
+});
+$('div.b1').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b2').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeIn(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b3').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeIn(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b4').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeIn(300);
+});
+
+
+$('div.dictionar2').click(function(){
+$('div.dictionar').show();
+$('div.dictionarclose').show();
+});
+
+$('div.dictionarclose').click(function(){
+$('div.dictionar').hide();
+$('div.dictionarclose').hide();
+});
+
+
+$('div.exploratoriimg').hover(function(){
+$('div.exploratori').show();},
+    function(){
+$('div.exploratori').hide();
+  }); 
+
+
+
+$('div.perioadeimg').hover(function(){
+$('div.perioade').show();},
+    function(){
+$('div.perioade').hide();
+  }); 
+
+
+
+$('div.obiecteimg').hover(function(){
+$('div.obiecte').show();},
+    function(){
+$('div.obiecte').hide();
+  }); 
+
+
+
+$('div.imperiiimg').hover(function(){
+$('div.imperii').show();},
+    function(){
+$('div.imperii').hide();
+  }); 
+
+
+$('div.closearhiva').click(function(){
+$('div.cadruarhiva').hide();
+});
+
+$('div.arhiva').click(function(){
+$('div.cadruarhiva').show();
+});
+
+
+
+
+$('div.dreapta1').click(function(){
+
+$('div.dreapta1').hide();
+$('div.dreapta2').show();
+$('div.stanga1').show();
+$('div.primii').animate({
+left:'5%'
+},2000);
+
+$('div.inceputul').animate({
+ left: '-100%'
+},2000);
+
+});
+
+
+
+
+
+
+$('div.dreapta2').click(function(){
+$('div.dreapta2').hide();
+$('div.dreapta3').show();
+$('div.stanga1').hide();
+$('div.stanga2').show();
+$('div.per1').animate({
+left:'5%'
+},2000);
+
+$('div.primii').animate({
+ left: '-100%'
+},2000);
+
+
+});
+
+
+$('div.dreapta3').click(function(){
+$('div.dreapta3').hide();
+$('div.dreapta4').show();
+$('div.stanga2').hide();
+$('div.stanga3').show();
+$('div.per2').animate({
+left:'5%'
+},2000);
+
+$('div.per1').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+$('div.dreapta4').click(function(){
+$('div.dreapta4').hide();
+$('div.stanga3').hide();
+$('div.stanga4').show();
+$('div.urmari').animate({
+left:'5%'
+},2000);
+
+$('div.per2').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+$('div.stanga1').click(function(){
+
+$('div.stanga1').hide();
+$('div.dreapta1').show();
+$('div.dreapta2').hide();
+$('div.inceputul').animate({
+ left: '5%'
+},2000);
+
+$('div.primii').animate({
+left:'100%'
+},2000);
+
+
+});
+
+
+$('div.stanga2').click(function(){
+$('div.stanga2').hide();
+$('div.stanga1').show();
+$('div.dreapta2').show();
+$('div.dreapta3').hide();
+$('div.primii').animate({
+ left: '5%'
+},2000);
+
+$('div.per1').animate({
+left:'100%'
+},2000);
+
+
+
+});
+
+
+$('div.stanga3').click(function(){
+$('div.stanga3').hide();
+$('div.dreapta4').hide();
+$('div.dreapta3').show();
+$('div.stanga2').show();
+$('div.per1').animate({
+ left: '5%'
+},2000);
+
+$('div.per2').animate({
+left:'100%'
+
+},2000);
+
+
+});
+
+$('div.stanga4').click(function(){
+$('div.stanga4').hide();
+$('div.stanga3').show();
+$('div.dreapta4').show();
+$('div.per2').animate({
+ left: '5%'
+},2000);
+
+$('div.urmari').animate({
+left:'100%'
+
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+</script>
+
+<script> 
+$(function(){
+	$('div.james, div.columb,div.magellan').mouseover(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Hover.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+
+$('div.james, div.columb,div.magellan').click(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Click.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+ 
+});
+</script>
+
+         </head>
+
+
+                       <body>
+
+
+
+
+
+
+
+
+
+     <div class="meniu" >
+<div class="columb"></div>
+<div class="magellan"></div>
+<div class="ptharta"></div>
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+     </div>
+
+     <div class="harta">
+<div class="minimize"></div>
+
+
+
+<video class="videocolumb" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 1.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb2" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 2.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb3" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 3.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb4" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 4.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videomagellan" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Magellan.mp4" type="video/mp4">
+  <source src="Video/Magellan.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+     </div>
+
+     <div class="cautareexploratori">
+
+<div class="cadru">
+<div class="cautarecolumb"></div>
+<div class="cautarejames"></div>
+</div>
+      </div>
+
+<div class="arhiva"></div>
+<div class="dictionar2"></div>
+<a href="INDEX.html"><div class="cautare" ></div></a>
+<a href="Test.html"><div class="test" ></div></a>
+<a href="Galerie.html"><div class="galerie" ></div></a>
+<div class="titlu"></div>
+
+
+
+
+
+
+
+<div class="dictionar" style="display:none;">
+<div class="dictionarclose"></div>
+<script type="text/javascript" src="http://www.webdex.ro/js/search-widget.js" style="position:fixed;"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="casetatext">
+<br>
+<center><div class="fundaltitlu">Columb Traverseaza Oceanul Atlantic</div></center>
+<br><hr><br>
+
+<p>La sfarsitul secolului al XV-lea, cei mai multi invatati erau de acord ca Pamantul este rotund. In timp ce unii au incercat sa ajunga in Asia navigand in jurul Africii, genovezul Cristofor Columb era incredintat ca poate ajunge cu usurinta in China si Japonia navigand spre vest pe Oceanul Atlantic. Insa descoperirile vikingilor fusesera de mult uitate si el nu stia de existenta continentului american.</p>
+<img src="Imagini/columb.png" style="float:right" width="650" height="500"></img>
+<h1>1. Pregatiri pentru plecare</h1><br><hr>
+<p>La inceput, l-a rugat pe regele Portugaliei, Ioan al II-lea, sa-i finanteze expeditia. Acesta insa a considerat ca genovezul a calculat gresit dimensiunile Oceanului Atlantic si a refuzat sa-i dea bani. Atunci Columb s-a adresat suveranilor Spaniei, regele Ferdinand si regina Isabela. Acestia au fost impresionati de planul lui Columb si au acceptat sa finanteze calatoria.</p>
+<h1>2. Prima calatorie</h1><br><hr>
+<p>In 1492, Columb a parasit spania; comanda trei corabii: <i>Santa Maria</i>, nava-amiral, <i>Nina</i> si <i>Pinta</i>. Cand a ajuns in Marea Caraibilor, Columb a fost dezamagit ca nu a gasit acolo, asa cum se asteptase, porturile aglomerate ale Chinei. Ajunsese, din intamplare, in America.</p>
+
+<br><hr><br>
+<video  width="789.2px" height="422.6px" controls>
+  <source src="Video/Cristofor Columb 1.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video><br>
+
+
+<br>
+<center>
+<div class="casetajurnal">
+<center><div class="fundaltema3">"Jurnal de bord"</div></center><br><br>
+<i>
+<p>1. Flota a ridicat ancora din portul Palos, in 1492. Dupa cateva alarme false, pamantul a fost zarit in octombrie. Spaniolii au debarcat pe o insula mica, pe care au numit-o San Salvador (Sfantul Salvator). Acolo au intalnit bastinasi prietenosi. Crezand ca a ajuns in Orient, in Indii, Columb i-a numit "indieni", Nume folosit si in ziua de azi.</p>
+<p>2. Deoarece nu au descoperit orasele bogate ale Asiei la care se asteptau, spaniolii s-au indreptat spre Cuba, care era locuita de populatia taino, foarte prietenoasa. Uimiti, europenii au descoperit ca acestia dormeau in paturi suspendate, numite hamacuri, si fumau frunze de tutun. In noiembrie, marinarii de pe nava <i>Pinta</i> au dezertat, dezamagiti ca nu au gasit comorile la care se asteptau.</p>
+<p>3. In decembrie, <i>Santa Maria</i> a esuat in largul insulei Hispaniola, pe care Columb a ocupat-o in numele Spaniei. El le-a ordonat oamenilor sai sa construiasca un fort pe insula si s-a intors in Spania, lasand acolo 39 de membri ai echipajului.</p>
+</i>
+</div></center><br>
+
+
+
+<p>In timpul explorarii continentului american, spaniolii au descoperit trei mari civilizatii: azteca in Mexic, incasa in Peru si mayasa in Ameria Centrala. Au fost uimiti de bogatia acestor popoare si de cetatile pe care le construisera.</p>
+<centre><img src="Imperii/pozaimp.png" width="400" height="600"></img><centre>
+
+<h1>3. A doua calatorie</h1><br><hr>
+<p>Dupa intoarcerea triumfala in Spania, regele Ferdinant si regina Isabela l-au numit pe Columb guvernator al insulelor pe care le descoperise. Sase luni mai tarziu, Columb s-a intors in Hispaniola cu 17 corabii si un echipaj de peste 1000 de oameni. Ajunsi acolo, au inceput sa construiasca o asezare pe insula. Nemultumiti de venirea atator Spanioli , Bastinasii taino s-au revoltat. Multi au fost ucisi in timpul luptelor sangeroase care au urmat. In aprilie 1494, Columb a explorat coasta de sud a Cubei si a ajuns in Jamaica. S-a intors in Spania, in 1496.</p>
+<br><hr><br>
+<video  width="789.2px" height="422.6px" controls>
+  <source src="Video/Cristofor Columb 2.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video><br>
+<h1>4. A treia calatorie</h1><br><hr>
+<p>Doi ani mai tarziu, Columb a intreprins o a treia calatorie in Marea Caraibilor. Lasandu-si fratii, pe Bartolomeu si Diego, sa conduca asezarea din Insula Hispaniola, a pornit mai departe pe drumul catre Orientul Indepartat. In timpul acestui voiaj, a ajuns pe coastele continentului sud-american. Insa nu a reusit sa exploreze tinuturile acelea, deoarece situatia din Hisplaniola se inrautatise. De data aceasta, colonistii s-au revoltat impotriva fratilor lui Columb. Auzind despre aceasta, regele Ferdinand si regina Isabela au poruncit ca Cristofor Columb sa fie adus acasa in lanturi pentru a explica ce se petrecuse.</p>
+<br><hr><br>
+<video  width="789.2px" height="422.6px" controls>
+  <source src="Video/Cristofor Columb 3.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video><br><h1>5. A patra calatorie</h1><br><hr>
+<p> In ciuda faptului ca era in dizgratie, i-au permis sa intreprinda, in 1502, o a patra calatorie, ultima, in Marea Caraibilor. Columb a ajuns pe coastele Americii Centrale, dar nu a reusit sa gaseasca o cale de trecere spre Asia, intorcandu-se, in 1504, in Spania. </p>
+<br><hr><br>
+<video  width="789.2px" height="422.6px" controls>
+  <source src="Video/Cristofor Columb 4.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><hr><br>
+<center><div class="fundaltitlu">Columb Traverseaza Oceanul Atlantic</div></center>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cadruarhiva" style="display:none;">
+
+<div class="closearhiva"></div>
+
+<div class="inceputul">
+<a href="Cauze.html"><div class="fundaltema">Cauzele marilor descoperiri</div></a>
+<a href="Obiecte.html"><div class="fundaltema">Instrumente de navigatie descoperite ce au favorizat inceputul explorarilor</div></a>
+</div>
+
+<div class="primii">
+<a href="Calatori%20in%20Antichitate.html"><div class="fundaltema2">Calatori in antichitate</div></a>
+<a href="Vikingii%20descopera%20America.html"><div class="fundaltema2">Vikingii descopera America</div></a>
+<a href="Marco%20Polo.html"><div class="fundaltema2">Marco Polo calatoreste in China</div></a>
+</div>
+
+<div class="per1">
+<a href="Columb.html"><div class="fundaltema">Columb traverseaza Oceanul Atlantic</div></a>
+<a href="Vasco%20da%20Gama.html"><div class="fundaltema">Vasco da Gama ajunge in India pe mare</div></a>
+<a href="Magellan.html"><div class="fundaltema">Magellan navigheaza in jurul lumii</div></a>
+<a href="Pizarro%20cucereste%20Imperiul%20Inca.html"><div class="fundaltema">Pizzaro cucereste Imperiul Inca</div></a>
+<a href="Hernan%20Cortes.html"><div class="fundaltema">Hernan Cortes cucereste Imperiul Aztec</div></a>
+<a href="Epoca%20Exploratorilor.html"><div class="fundaltema">Scurt rezumat al epocii exploratorilor</div></a>
+</div>
+
+<div class="per2">
+
+<a href="La%20Salle%20navigheaza%20pe%20fluviul%20Mississippi.html"><div class="fundaltema2">La Salle navigheaza pe fluviul Mississippi</div></a>
+<a href="James%20Cook.html"><div class="fundaltema2">Capitanul Cook ajunge in Marile Sudului</div></a>
+<a href="Livingstone.html"><div class="fundaltema2">In Africa impreuna cu Livingstone</div></a>
+<a href="Shakleton.html"><div class="fundaltema2">Uimitoarea aventura a lui Shackleton</div></a>
+</div>
+
+<div class="urmari">
+<a href="Urmari.html"><div class="fundaltema">Castigul Europenilor</div></a>
+<a href="Portugalia.html"><div class="fundaltema">Imperiul colonial portughez</div></a>
+<a href="Spania.html"><div class="fundaltema">Imperiul colonial spaniol</div></a>
+</div>
+<div class="dreapta1"></div>
+<div class="dreapta2"></div>
+<div class="dreapta3"></div>
+<div class="dreapta4"></div>
+<div class="stanga1"></div>
+<div class="stanga2"></div>
+<div class="stanga3"></div>
+<div class="stanga4"></div>
+</div>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                       </body>
+
+
+
+</html>

@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html>
+         <head>
+
+
+<link rel="stylesheet" type="text/css" href="harta.css"> 
+<link rel="stylesheet" type="text/css" href="altele.css"> 
+<link rel="stylesheet" type="text/css" href="meniu.css">
+<link rel="stylesheet" type="text/css" href="arhiva.css"> 
+<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+<script src='jquery.js'></script>
+
+
+<script>
+$(document).ready(function(){
+
+              $("div.ptharta").click(function(){
+
+$("div.harta").animate  ({top: '0px' },2000);
+$("div.meniu").animate  ({top: '520px' },2000);
+
+
+                                                  });
+          //Columb
+
+$('div.columb').hover(function(){
+$('div.columb').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.columb').animate({
+   opacity:'0.7' },10);
+  }); 
+
+           //James
+
+$('div.james').hover(function(){
+$('div.james').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.james').animate({
+   opacity:'0.7' },10);
+  }); 
+           //Magellan
+$('div.magellan').hover(function(){
+$('div.magellan').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.magellan').animate({
+   opacity:'0.7' },10);
+  }); 
+
+         //Minimize
+$('div.minimize').hover(function(){
+$('div.minimize').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.minimize').animate({
+   opacity:'0.7' },10);
+  }); 
+
+$('div.minimize').click(function(){
+
+$('div.harta').animate({top:'-760px'},2000);
+$('div.meniu').animate({top:'-335px'},2000);
+
+});
+
+
+
+$('div.columb').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videomagellan').fadeOut();
+$('div.b1').fadeIn(300);
+$('div.b2').fadeIn(300);
+$('div.b3').fadeIn(300);
+$('div.b4').fadeIn(300);
+});
+
+$('div.magellan').click(function(){
+$('.videocolumb').fadeOut();
+$('.videomagellan').fadeIn(300);
+$('div.b1').fadeOut();
+$('div.b2').fadeOut();
+$('div.b3').fadeOut();
+$('div.b4').fadeOut();
+
+});
+$('div.b1').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b2').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeIn(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b3').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeIn(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b4').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeIn(300);
+});
+
+
+$('div.dictionar2').click(function(){
+$('div.dictionar').show();
+$('div.dictionarclose').show();
+});
+
+$('div.dictionarclose').click(function(){
+$('div.dictionar').hide();
+$('div.dictionarclose').hide();
+});
+
+
+$('div.exploratoriimg').hover(function(){
+$('div.exploratori').show();},
+    function(){
+$('div.exploratori').hide();
+  }); 
+
+
+
+$('div.perioadeimg').hover(function(){
+$('div.perioade').show();},
+    function(){
+$('div.perioade').hide();
+  }); 
+
+
+
+$('div.obiecteimg').hover(function(){
+$('div.obiecte').show();},
+    function(){
+$('div.obiecte').hide();
+  }); 
+
+
+
+$('div.imperiiimg').hover(function(){
+$('div.imperii').show();},
+    function(){
+$('div.imperii').hide();
+  }); 
+
+
+$('div.closearhiva').click(function(){
+$('div.cadruarhiva').hide();
+});
+
+$('div.arhiva').click(function(){
+$('div.cadruarhiva').show();
+});
+
+
+
+
+$('div.dreapta1').click(function(){
+
+$('div.dreapta1').hide();
+$('div.dreapta2').show();
+$('div.stanga1').show();
+$('div.primii').animate({
+left:'5%'
+},2000);
+
+$('div.inceputul').animate({
+ left: '-100%'
+},2000);
+
+});
+
+
+
+
+
+
+$('div.dreapta2').click(function(){
+$('div.dreapta2').hide();
+$('div.dreapta3').show();
+$('div.stanga1').hide();
+$('div.stanga2').show();
+$('div.per1').animate({
+left:'5%'
+},2000);
+
+$('div.primii').animate({
+ left: '-100%'
+},2000);
+
+
+});
+
+
+$('div.dreapta3').click(function(){
+$('div.dreapta3').hide();
+$('div.dreapta4').show();
+$('div.stanga2').hide();
+$('div.stanga3').show();
+$('div.per2').animate({
+left:'5%'
+},2000);
+
+$('div.per1').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+$('div.dreapta4').click(function(){
+$('div.dreapta4').hide();
+$('div.stanga3').hide();
+$('div.stanga4').show();
+$('div.urmari').animate({
+left:'5%'
+},2000);
+
+$('div.per2').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+$('div.stanga1').click(function(){
+
+$('div.stanga1').hide();
+$('div.dreapta1').show();
+$('div.dreapta2').hide();
+$('div.inceputul').animate({
+ left: '5%'
+},2000);
+
+$('div.primii').animate({
+left:'100%'
+},2000);
+
+
+});
+
+
+$('div.stanga2').click(function(){
+$('div.stanga2').hide();
+$('div.stanga1').show();
+$('div.dreapta2').show();
+$('div.dreapta3').hide();
+$('div.primii').animate({
+ left: '5%'
+},2000);
+
+$('div.per1').animate({
+left:'100%'
+},2000);
+
+
+
+});
+
+
+$('div.stanga3').click(function(){
+$('div.stanga3').hide();
+$('div.dreapta4').hide();
+$('div.dreapta3').show();
+$('div.stanga2').show();
+$('div.per1').animate({
+ left: '5%'
+},2000);
+
+$('div.per2').animate({
+left:'100%'
+
+},2000);
+
+
+});
+
+$('div.stanga4').click(function(){
+$('div.stanga4').hide();
+$('div.stanga3').show();
+$('div.dreapta4').show();
+$('div.per2').animate({
+ left: '5%'
+},2000);
+
+$('div.urmari').animate({
+left:'100%'
+
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+</script>
+
+<script> 
+$(function(){
+	$('div.james, div.columb,div.magellan').mouseover(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Hover.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+
+$('div.james, div.columb,div.magellan').click(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Click.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+ 
+});
+</script>
+
+         </head>
+
+
+                       <body>
+
+
+
+
+
+
+
+
+
+     <div class="meniu" >
+<div class="columb"></div>
+<div class="magellan"></div>
+<div class="ptharta"></div>
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+     </div>
+
+     <div class="harta">
+<div class="minimize"></div>
+
+
+
+<video class="videocolumb" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 1.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb2" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 2.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb3" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 3.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb4" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 4.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videomagellan" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Magellan.mp4" type="video/mp4">
+  <source src="Video/Magellan.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+     </div>
+
+     <div class="cautareexploratori">
+
+<div class="cadru">
+<div class="cautarecolumb"></div>
+<div class="cautarejames"></div>
+</div>
+      </div>
+
+<div class="arhiva"></div>
+<div class="dictionar2"></div>
+<a href="INDEX.html"><div class="cautare" ></div></a>
+<a href="Test.html"><div class="test" ></div></a>
+<a href="Galerie.html"><div class="galerie" ></div></a>
+<div class="titlu"></div>
+
+
+
+
+
+
+
+<div class="dictionar" style="display:none;">
+<div class="dictionarclose"></div>
+<script type="text/javascript" src="http://www.webdex.ro/js/search-widget.js" style="position:fixed;"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="casetatext">
+<br>
+<center><div class="fundaltitlu">Castigul Europenilor</div></center>
+<br><hr><br>
+
+<h1>*</h1><p>Dezvoltarea vietii economice in Europa apuseana. Ca urmare a abundentei de produse si a afluxului de metale pretioase aduse din teritoriile nou descoperite in statele din apusul Europei .</p>
+<img src="Imagini/aur.png" style="float:left" width="330" height="300"></img>
+
+<h1>*</h1><p>Din teritorile recent descoperite erau aduse in Europa mari cantitati de metale pretioaase si marfuri coloniale care imbogatesc pe negustori si bancheri. Avand la dispozitie multi bani (capital) burghezia construia noi ateliere manufacturiere .</p>
+
+<img src="Imagini/rosie.png" style="float:right" width="330" height="300"></img>
+<h1>*</h1><p>Drumurile si centrele comerciale aflate in bazinul Marii Mediterane si al Marii Baltice se muta in Oceanul Atlantic care devine puntea de legatura intre continente. De aceea orasele Venetia si Genova isi pierd treptat importanta economica comertul lor .</p>
+<h1>*</h1><p>Se ridica porturile din Spania Portugalia Tarile de Jos Franta si Anglia asezate pe tarmurile Oceanul Atlantic iar comertul european se intesifica.</p>
+<img src="Imagini/cartof.png" style="float:left" width="330" height="300"></img>
+<h1>*</h1><p>Din America s-au introdus in Europa noi plante:porumbul ,cartoful si rosiile care au capatat un rol important in alimentatie. </p>
+
+<h1>*</h1><p>Ca urmare a descoperirilor geografice s-au realizat progrese insemnate in constructia vaselor maritime si s-au perfectionat arta navigatiei.</p>
+<br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+<br><hr><br>
+<center><div class="fundaltitlu">Castigul Europenilor</div></center>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cadruarhiva" style="display:none;">
+
+<div class="closearhiva"></div>
+
+<div class="inceputul">
+<a href="Cauze.html"><div class="fundaltema">Cauzele marilor descoperiri</div></a>
+<a href="Obiecte.html"><div class="fundaltema">Instrumente de navigatie descoperite ce au favorizat inceputul explorarilor</div></a>
+</div>
+
+<div class="primii">
+<a href="Calatori%20in%20Antichitate.html"><div class="fundaltema2">Calatori in antichitate</div></a>
+<a href="Vikingii%20descopera%20America.html"><div class="fundaltema2">Vikingii descopera America</div></a>
+<a href="Marco%20Polo.html"><div class="fundaltema2">Marco Polo calatoreste in China</div></a>
+</div>
+
+<div class="per1">
+<a href="Columb.html"><div class="fundaltema">Columb traverseaza Oceanul Atlantic</div></a>
+<a href="Vasco%20da%20Gama.html"><div class="fundaltema">Vasco da Gama ajunge in India pe mare</div></a>
+<a href="Magellan.html"><div class="fundaltema">Magellan navigheaza in jurul lumii</div></a>
+<a href="Pizarro%20cucereste%20Imperiul%20Inca.html"><div class="fundaltema">Pizzaro cucereste Imperiul Inca</div></a>
+<a href="Hernan%20Cortes.html"><div class="fundaltema">Hernan Cortes cucereste Imperiul Aztec</div></a>
+<a href="Epoca%20Exploratorilor.html"><div class="fundaltema">Scurt rezumat al epocii exploratorilor</div></a>
+</div>
+
+<div class="per2">
+
+<a href="La%20Salle%20navigheaza%20pe%20fluviul%20Mississippi.html"><div class="fundaltema2">La Salle navigheaza pe fluviul Mississippi</div></a>
+<a href="James%20Cook.html"><div class="fundaltema2">Capitanul Cook ajunge in Marile Sudului</div></a>
+<a href="Livingstone.html"><div class="fundaltema2">In Africa impreuna cu Livingstone</div></a>
+<a href="Shakleton.html"><div class="fundaltema2">Uimitoarea aventura a lui Shackleton</div></a>
+</div>
+
+<div class="urmari">
+<a href="Urmari.html"><div class="fundaltema">Castigul Europenilor</div></a>
+<a href="Portugalia.html"><div class="fundaltema">Imperiul colonial portughez</div></a>
+<a href="Spania.html"><div class="fundaltema">Imperiul colonial spaniol</div></a>
+</div>
+<div class="dreapta1"></div>
+<div class="dreapta2"></div>
+<div class="dreapta3"></div>
+<div class="dreapta4"></div>
+<div class="stanga1"></div>
+<div class="stanga2"></div>
+<div class="stanga3"></div>
+<div class="stanga4"></div>
+</div>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                       </body>
+
+
+
+</html>

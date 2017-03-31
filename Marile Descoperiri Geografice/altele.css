@@ -1,0 +1,556 @@
+div.casetatext
+{
+font-family: 'Nunito', sans-serif;
+
+background-image:url('Fundal/text.png');
+background-repeat:repeat;
+position:absolute;
+width:auto;
+height:auto;
+right:0px;
+left:170px;
+top:500px;
+text-align:center;
+border-style:solid;
+border-color:#990000;
+border-size:15px;
+z-index:1;
+}
+
+div.casetatext2
+{
+font-family: 'Nunito', sans-serif;
+
+background-image:url('Fundal/text.png');
+background-repeat:repeat;
+position:absolute;
+width:auto;
+height:auto;
+right:0px;
+left:0px;
+text-align:center;
+border-style:solid;
+border-color:#990000;
+border-size:15px;
+z-index:1;
+}
+div.casetajurnal
+{
+font-family: 'Nunito', sans-serif;
+
+background-image:url('Imagini/jurnalfundal.png');
+background-repeat:no-repeat;
+position:relative;
+width:90%;
+height:auto;
+text-align:left;
+z-index:2;
+padding :20px;
+}
+h1 {font-size:40px;color:#527ACC;}
+h2 {font-size:25px;}
+p {font-size:20px;}
+a:link {color:black;}    /* unvisited link */
+a:visited {color:black;} /* visited link */
+a:hover {color:black;}   /* mouse over link */
+a:active {color:black;}  /* selected link */
+
+div.titlumagellan
+{
+
+
+background-image:url('Caseta Text/titlumagellan.png');
+background-size:100% 100%;
+width:500px;
+height:120px;
+}
+#quiz{
+margin-top:200px;
+margin-left:200px;
+width:1000px;
+height:300px;
+background-image:url('Fundal/text.png');
+background-size:100% 100%;
+
+}
+
+div.fundaltitlu
+{
+background-image:url('Caseta Text/fundaltitlu.png');
+background-size:100% 100%;
+position:relative;
+width:70%;
+height:auto;
+left: inherit;
+
+opacity:0.9;
+cursor:url('Cursor/Hand.cur');
+z-index:2;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+padding:10px;
+margin-top:20px;
+margin-bottom:20px;
+margin-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.f1
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:400px;
+}
+
+div.f2
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:800px;
+}
+
+div.f3
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:1200px;
+}
+div.f4
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:1600px;
+}
+div.f5
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:2000px;
+}
+div.f6
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:2400px;
+}
+div.f7
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:2800px;
+}
+div.f8
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:3200px;
+}
+div.f9
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:3600px;
+}
+div.f10
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:4000px;
+}
+div.f11
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:4400px;
+}
+div.f12
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:4800px;
+}
+div.f13
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:5200px;
+}
+div.f14
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:5600px;
+}
+div.f15
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:6000px;
+}
+div.f16
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:6400px;
+}
+
+div.f17
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:6800px;
+}
+
+div.f18
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:7200px;
+}
+
+div.f19
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:7600px;
+}
+
+div.f20
+{
+background-image:url('Test/fundal.png');
+background-size:100% 100%;
+position:absolute;
+width:700px;
+height:400px;
+right:400px;
+z-index:5;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+margin:10px;
+top:8000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.intrebare
+{
+background-image:url('Test/intrebare.png');
+background-size:100% 100%;
+position:relative;
+width:75%;
+height:auto;
+left:20%;
+opacity:0.9;
+cursor:url('Cursor/Hand.cur');
+z-index:2;
+text-align:center;
+  font-family: 'Berlin', Arial, sans-serif;
+color:black;
+font-size:40px;
+padding-bottom:15px;
+margin-top:10px;
+margin-bottom:20px;
+margin-left:10px;
+}
+
+div.rasp
+{
+background-image:url('Test/rasp.png');
+background-size:100% 100%;
+position:relative;
+width:70%;
+height:auto;
+left:15%;
+opacity:0.9;
+cursor:pointer;
+z-index:2;
+text-align:left;
+  font-family: 'Berlin', Arial, sans-serif;
+color:#BEBEBE;
+font-size:40px;
+padding-bottom:15px;
+padding-left:30px;
+padding-top:10px;
+
+}
+
+div#rez
+{
+background-image:url('Test/raspuns.png');
+background-size:100% 100%;
+position:fixed;
+width:150px;
+height:160px;
+top:50%;
+margin-top:-75px;
+left:20px;
+z-index:39;
+cursor:pointer;
+}
+
+div.titlutest
+{
+background-image:url('Test/titlu.png');
+background-size:100% 100%;
+position:absolute;
+width:50%;
+height:200px;
+left:50%;
+top:200px;
+margin-left:-25%;
+z-index:39;
+}
+
+div.sfat
+{
+background-image:url('Test/sfat.png');
+background-size:100% 100%;
+position:absolute;
+width:100%;
+height:200px;
+left:0;
+top:0;
+
+z-index:39;
+}
+
+@font-face {
+	font-family: 'Berlin';
+	src: url('fonts/riesling.eot');
+	src: local('Riesling Regular'), local('Riesling'), url('Fonturi/Berlin.ttf') format('truetype');
+}

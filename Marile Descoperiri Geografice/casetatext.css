@@ -1,0 +1,16 @@
+div.arhiva
+{
+background-image:url('Meniu/arhiva.png');
+background-size:100% 100%;
+position:fixed;
+width:350px;
+height:130px;
+left:-230px;
+top:105px; 
+cursor:url("Cursor/Hand.cur");
+z-index:40;
+}
+div.arhiva:hover
+{
+left:-10px;
+}

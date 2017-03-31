@@ -1,0 +1,777 @@
+﻿<!DOCTYPE html>
+<html>
+         <head>
+
+
+<link rel="stylesheet" type="text/css" href="harta.css"> 
+<link rel="stylesheet" type="text/css" href="altele.css"> 
+<link rel="stylesheet" type="text/css" href="meniu.css">
+<link rel="stylesheet" type="text/css" href="arhiva.css"> 
+<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+<script src='jquery.js'></script>
+
+<script>
+var c=0;
+var g=0;
+</script>
+
+<script>
+$(document).ready(function(){
+
+              $("div.ptharta").click(function(){
+
+$("div.harta").animate  ({top: '0px' },2000);
+$("div.meniu").animate  ({top: '520px' },2000);
+
+
+                                                  });
+          //Columb
+
+$('div.columb').hover(function(){
+$('div.columb').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.columb').animate({
+   opacity:'0.7' },10);
+  }); 
+
+           //James
+
+$('div.james').hover(function(){
+$('div.james').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.james').animate({
+   opacity:'0.7' },10);
+  }); 
+           //Magellan
+$('div.magellan').hover(function(){
+$('div.magellan').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.magellan').animate({
+   opacity:'0.7' },10);
+  }); 
+
+         //Minimize
+$('div.minimize').hover(function(){
+$('div.minimize').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.minimize').animate({
+   opacity:'0.7' },10);
+  }); 
+
+$('div.minimize').click(function(){
+
+$('div.harta').animate({top:'-760px'},2000);
+$('div.meniu').animate({top:'-335px'},2000);
+
+});
+
+
+
+$('div.columb').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videomagellan').fadeOut();
+$('div.b1').fadeIn(300);
+$('div.b2').fadeIn(300);
+$('div.b3').fadeIn(300);
+$('div.b4').fadeIn(300);
+});
+
+$('div.magellan').click(function(){
+$('.videocolumb').fadeOut();
+$('.videomagellan').fadeIn(300);
+$('div.b1').fadeOut();
+$('div.b2').fadeOut();
+$('div.b3').fadeOut();
+$('div.b4').fadeOut();
+
+});
+$('div.b1').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b2').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeIn(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b3').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeIn(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b4').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeIn(300);
+});
+
+
+$('div.dictionar2').click(function(){
+$('div.dictionar').show();
+$('div.dictionarclose').show();
+});
+
+$('div.dictionarclose').click(function(){
+$('div.dictionar').hide();
+$('div.dictionarclose').hide();
+});
+
+
+$('div.exploratoriimg').hover(function(){
+$('div.exploratori').show();},
+    function(){
+$('div.exploratori').hide();
+  }); 
+
+
+
+$('div.perioadeimg').hover(function(){
+$('div.perioade').show();},
+    function(){
+$('div.perioade').hide();
+  }); 
+
+
+
+$('div.obiecteimg').hover(function(){
+$('div.obiecte').show();},
+    function(){
+$('div.obiecte').hide();
+  }); 
+
+
+
+$('div.imperiiimg').hover(function(){
+$('div.imperii').show();},
+    function(){
+$('div.imperii').hide();
+  }); 
+
+
+$('div.closearhiva').click(function(){
+$('div.cadruarhiva').hide();
+});
+
+$('div.arhiva').click(function(){
+$('div.cadruarhiva').show();
+});
+
+
+
+
+$('div.dreapta1').click(function(){
+
+$('div.dreapta1').hide();
+$('div.dreapta2').show();
+$('div.stanga1').show();
+$('div.primii').animate({
+left:'5%'
+},2000);
+
+$('div.inceputul').animate({
+ left: '-100%'
+},2000);
+
+});
+
+
+
+
+
+
+$('div.dreapta2').click(function(){
+$('div.dreapta2').hide();
+$('div.dreapta3').show();
+$('div.stanga1').hide();
+$('div.stanga2').show();
+$('div.per1').animate({
+left:'5%'
+},2000);
+
+$('div.primii').animate({
+ left: '-100%'
+},2000);
+
+
+});
+
+
+$('div.dreapta3').click(function(){
+$('div.dreapta3').hide();
+$('div.dreapta4').show();
+$('div.stanga2').hide();
+$('div.stanga3').show();
+$('div.per2').animate({
+left:'5%'
+},2000);
+
+$('div.per1').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+$('div.dreapta4').click(function(){
+$('div.dreapta4').hide();
+$('div.stanga3').hide();
+$('div.stanga4').show();
+$('div.urmari').animate({
+left:'5%'
+},2000);
+
+$('div.per2').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+$('div.stanga1').click(function(){
+
+$('div.stanga1').hide();
+$('div.dreapta1').show();
+$('div.dreapta2').hide();
+$('div.inceputul').animate({
+ left: '5%'
+},2000);
+
+$('div.primii').animate({
+left:'100%'
+},2000);
+
+
+});
+
+
+$('div.stanga2').click(function(){
+$('div.stanga2').hide();
+$('div.stanga1').show();
+$('div.dreapta2').show();
+$('div.dreapta3').hide();
+$('div.primii').animate({
+ left: '5%'
+},2000);
+
+$('div.per1').animate({
+left:'100%'
+},2000);
+
+
+
+});
+
+
+$('div.stanga3').click(function(){
+$('div.stanga3').hide();
+$('div.dreapta4').hide();
+$('div.dreapta3').show();
+$('div.stanga2').show();
+$('div.per1').animate({
+ left: '5%'
+},2000);
+
+$('div.per2').animate({
+left:'100%'
+
+},2000);
+
+
+});
+
+$('div.stanga4').click(function(){
+$('div.stanga4').hide();
+$('div.stanga3').show();
+$('div.dreapta4').show();
+$('div.per2').animate({
+ left: '5%'
+},2000);
+
+$('div.urmari').animate({
+left:'100%'
+
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+</script>
+
+<script> 
+$(function(){
+	$('div.james, div.columb,div.magellan').mouseover(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Hover.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+
+$('div.james, div.columb,div.magellan').click(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Click.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+ 
+});
+</script>
+
+         </head>
+
+
+                       <body style="overflow-x:hidden;">
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="casetatext2" style="position:fixed;height:auto;bottom:0;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<div class="f1">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">1</div>
+<div class="intrebare">Unde se afla Capul Bunei Sperante?</div>
+<div class="rasp" onclick = "g1('a')" >a) In vestul Asiei</div>
+<div class="rasp" onclick = "g1('b')">b) In sudul Asiei</div>
+<div class="rasp" onclick = "g1('c')">c) In sudul Africii</div>
+</div>
+
+
+<div class="f2">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">2</div>
+<div class="intrebare">Cum se numea nava de transportat marfuri a vikingilor?</div>
+<div class="rasp" onclick = "g2('a')" >a) Drakkar</div>
+<div class="rasp" onclick = "g2('b')">b) Knarr</div>
+<div class="rasp" onclick = "g2('c')">c) Caravela</div>
+</div>
+
+
+<div class="f3">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">3</div>
+<div class="intrebare">Spre ce tara si-a intreprins Marco Polo calatoria?</div>
+<div class="rasp" onclick = "g3('a')" >a) China</div>
+<div class="rasp" onclick = "g3('b')">b) India</div>
+<div class="rasp" onclick = "g3('c')">c) Noua Zeelanda</div>
+</div>
+
+
+<div class="f4">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">4</div>
+<div class="intrebare">In ce expreditie a avut Cristofor Columb cel mai mare echipaj?</div>
+<div class="rasp" onclick = "g4('a')" >a) In prima</div>
+<div class="rasp" onclick = "g4('b')">b) In a doua</div>
+<div class="rasp" onclick = "g4('c')">c) In a treia</div>
+</div>
+
+
+<div class="f5">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">5</div>
+<div class="intrebare">Care dintre urmatoarele civilizatii era localizata in Mexic?</div>
+<div class="rasp" onclick = "g5('a')" >a) Azteca</div>
+<div class="rasp" onclick = "g5('b')">b) Mayasa</div>
+<div class="rasp" onclick = "g5('c')">c) Incasa</div>
+</div>
+
+
+<div class="f6">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">6</div>
+<div class="intrebare">Care a fost tinta lui Vasco da Gama?</div>
+<div class="rasp" onclick = "g6('a')" >a) India</div>
+<div class="rasp" onclick = "g6('b')">b) America de Sud</div>
+<div class="rasp" onclick = "g6('c')">c) America de Nord</div>
+</div>
+
+
+<div class="f7">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">7</div>
+<div class="intrebare">Cine a descoperit Capul Bunei Sperante?</div>
+<div class="rasp" onclick = "g7('a')" >a) Cristofor Columb</div>
+<div class="rasp" onclick = "g7('b')">b) Bartolomeo Diaz</div>
+<div class="rasp" onclick = "g7('c')">c) Magellan</div>
+</div>
+
+
+<div class="f8">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">8</div>
+<div class="intrebare">Unde a murit Magellan?</div>
+<div class="rasp" onclick = "g8('a')" >a) In vestul Asiei</div>
+<div class="rasp" onclick = "g8('b')">b) In India</div>
+<div class="rasp" onclick = "g8('c')">c) In Filipine</div>
+</div>
+
+
+<div class="f9">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">9</div>
+<div class="intrebare">Cine a condus mai departe calatoria in jurul lumii dupa moartea lui Magellan?</div>
+<div class="rasp" onclick = "g9('a')" >a) Hernando Cortés</div>
+<div class="rasp" onclick = "g9('b')">b) Francisco Pizarro</div>
+<div class="rasp" onclick = "g9('c')">c) Juan Sebastián Elcano</div>
+</div>
+
+
+<div class="f10">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">10</div>
+<div class="intrebare">Cu cate corabii a plecat Magellan din Spania in 1519?</div>
+<div class="rasp" onclick = "g10('a')" >a) 3</div>
+<div class="rasp" onclick = "g10('b')">b) 5</div>
+<div class="rasp" onclick = "g10('c')">c) 17</div>
+</div>
+
+
+<div class="f11">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">11</div>
+<div class="intrebare">Ce Imperiu cucereste Francisco Pizarro?</div>
+<div class="rasp" onclick = "g11('a')" >a) Aztec</div>
+<div class="rasp" onclick = "g11('b')">b) Mayas</div>
+<div class="rasp" onclick = "g11('c')">c) Incas</div>
+</div>
+
+
+<div class="f12">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">12</div>
+<div class="intrebare">Ce Imperiu cucereste Hernando Cortés?</div>
+<div class="rasp" onclick = "g12('a')" >a) Aztec</div>
+<div class="rasp" onclick = "g12('b')">b) Mayas</div>
+<div class="rasp" onclick = "g12('c')">c) Incas</div>
+</div>
+
+
+<div class="f13">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">13</div>
+<div class="intrebare">Pe ce fluviu navigheaza Réné-Robert de la Salle?</div>
+<div class="rasp" onclick = "g13('a')" >a) Nil</div>
+<div class="rasp" onclick = "g13('b')">b) Mississippi</div>
+<div class="rasp" onclick = "g13('c')">c) Nici unul</div>
+</div>
+
+
+<div class="f14">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">14</div>
+<div class="intrebare">Cate calatorii intreprinde James Cook in cariera sa de navigator?</div>
+<div class="rasp" onclick = "g14('a')" >a) 2</div>
+<div class="rasp" onclick = "g14('b')">b) 3</div>
+<div class="rasp" onclick = "g14('c')">c) 4</div>
+</div>
+
+
+<div class="f15">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">15</div>
+<div class="intrebare">Din ce motiv a ajuns David Livingstone sa exploreze Africa?</div>
+<div class="rasp" onclick = "g15('a')" style="font-size:30px;">a) Voia sa le vorbeasca oamenilor despre Harul Mântuirii.</div>
+<div class="rasp" onclick = "g15('b')" style="font-size:30px;">b) Din dorinta da a castiga cat mai multe bogatii pentru sine.</div>
+</div>
+
+
+<div class="f16">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">16</div>
+<div class="intrebare">Cum s-a numit nava care a strabatut o parte din Antartica incepand cu anul 1914?</div>
+<div class="rasp" onclick = "g16('a')" >a) Endeavour</div>
+<div class="rasp" onclick = "g16('b')">b) Endurance</div>
+<div class="rasp" onclick = "g16('c')">c) Trinidad</div>
+</div>
+
+
+<div class="f17">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">17</div>
+<div class="intrebare">Cati marinari s-au intors in Spania in urma circumnavigatiei?</div>
+<div class="rasp" onclick = "g17('a')" >a) 18</div>
+<div class="rasp" onclick = "g17('b')">b) 54</div>
+<div class="rasp" onclick = "g17('c')">c) 60</div>
+</div>
+
+
+<div class="f18">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">18</div>
+<div class="intrebare">Cine a fost primul european care a pus piciorul pe sol american?</div>
+<div class="rasp" onclick = "g18('a')" >a) Fernando Magellan</div>
+<div class="rasp" onclick = "g18('b')">b) Leif Ericsson</div>
+<div class="rasp" onclick = "g18('c')">c) Cristofor Columb</div>
+</div>
+
+
+<div class="f19">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">19</div>
+<div class="intrebare">Cine l-a finantat pe Cristofor Columb pentru calatoriile sale?</div>
+<div class="rasp" onclick = "g19('a')" >a) Regii Spaniei</div>
+<div class="rasp" onclick = "g19('b')">b) Regele Portugaliei</div>
+<div class="rasp" onclick = "g19('c')">c) Nimeni. Singur a reusit sa stranga banii necesari.</div>
+</div>
+
+
+<div class="f20">
+<div style="left:10px;top:150px;position:absolute;font-size:100px;color:#BEBEBE;">20</div>
+<div class="intrebare">Cat a durat circumnavigatia lui Magellan?</div>
+<div class="rasp" onclick = "g20('a')" >a) 2 ani</div>
+<div class="rasp" onclick = "g20('b')">b) 3 ani</div>
+<div class="rasp" onclick = "g20('c')">c) 4 ani</div>
+</div>
+
+
+<div id="rez" onclick = "rez()"></div>
+<div class="titlutest"></div>
+<div class="sfat"></div>
+
+
+
+
+
+
+
+
+<script type = "text/javascript">
+
+
+function g1(input) {
+if (input == "c") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f1').animate({right:'-600'},1500);});
+}
+
+function g2(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f2').animate({right:'-600'},1500);});
+}
+
+function g3(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f3').animate({right:'-600'},1500);});
+}
+
+function g4(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f4').animate({right:'-600'},1500);});
+}
+
+function g5(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f5').animate({right:'-600'},1500);});
+}
+
+function g6(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f6').animate({right:'-600'},1500);});
+}
+
+function g7(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f7').animate({right:'-600'},1500);});
+}
+
+function g8(input) {
+if (input == "c") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f8').animate({right:'-600'},1500);});
+}
+
+function g9(input) {
+if (input == "c") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f9').animate({right:'-600'},1500);});
+}
+
+function g10(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f10').animate({right:'-600'},1500);});
+}
+
+function g11(input) {
+if (input == "c") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f11').animate({right:'-600'},1500);});
+}
+
+function g12(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f12').animate({right:'-600'},1500);});
+}
+
+function g13(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f13').animate({right:'-600'},1500);});
+}
+
+function g14(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f14').animate({right:'-600'},1500);});
+}
+function g15(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f15').animate({right:'-600'},1500);});
+}
+function g16(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f16').animate({right:'-600'},1500);});
+}
+function g17(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f17').animate({right:'-600'},1500);});
+}
+function g18(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f18').animate({right:'-600'},1500);});
+}
+function g19(input) {
+if (input == "a") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f19').animate({right:'-600'},1500);});
+}
+function g20(input) {
+if (input == "b") {c=c+1;}
+else {g=g+1;}
+$(document).ready(function(){$('div.f20').animate({right:'-600'},1500);});
+}
+
+
+function rez()
+{
+if(c+g==20)
+alert(" Ai obtinut " + (c*10-g*5) + "  din 200 " );
+else alert(" Nu ai raspuns la toate intrebarile ! ");
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cadruarhiva" style="display:none;">
+
+<div class="closearhiva"></div>
+
+<div class="inceputul">
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Cauze.html"><div class="fundaltema">Cauzele marilor descoperiri</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Obiecte.html"><div class="fundaltema">Instrumente de navigatie descoperite ce au favorizat inceputul explorarilor</div></a>
+</div>
+
+<div class="primii">
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Calatori%20in%20Antichitate.html"><div class="fundaltema2">Calatori in antichitate</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Vikingii%20descopera%20America.html"><div class="fundaltema2">Vikingii descopera America</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Marco%20Polo.html"><div class="fundaltema2">Marco Polo calatoreste in China</div></a>
+</div>
+
+<div class="per1">
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Columb.html"><div class="fundaltema">Columb traverseaza Oceanul Atlantic</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Vasco%20da%20Gama.html"><div class="fundaltema">Vasco da Gama ajunge in India pe mare</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Magellan.html"><div class="fundaltema">Magellan navigheaza in jurul lumii</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Pizarro%20cucereste%20Imperiul%20Inca.html"><div class="fundaltema">Pizzaro cucereste Imperiul Inca</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Hernan%20Cortes.html"><div class="fundaltema">Hernan Cortes cucereste Imperiul Aztec</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Epoca%20Exploratorilor.html"><div class="fundaltema">Scurt rezumat al epocii exploratorilor</div></a>
+</div>
+
+<div class="per2">
+
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/La%20Salle%20navigheaza%20pe%20fluviul%20Mississippi.html"><div class="fundaltema2">La Salle navigheaza pe fluviul Mississippi</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/James%20Cook.html"><div class="fundaltema2">Capitanul Cook ajunge in Marile Sudului</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Livingstone.html"><div class="fundaltema2">In Africa impreuna cu Livingstone</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Shakleton.html"><div class="fundaltema2">Uimitoarea aventura a lui Shackleton</div></a>
+</div>
+
+<div class="urmari">
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Urmari.html"><div class="fundaltema">Castigul Europenilor</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Portugalia.html"><div class="fundaltema">Imperiul colonial portughez</div></a>
+<a href="file:///H:/Marile%20Descoperiri%20Geografice/Spania.html"><div class="fundaltema">Imperiul colonial spaniol</div></a>
+</div>
+<div class="dreapta1"></div>
+<div class="dreapta2"></div>
+<div class="dreapta3"></div>
+<div class="dreapta4"></div>
+<div class="stanga1"></div>
+<div class="stanga2"></div>
+<div class="stanga3"></div>
+<div class="stanga4"></div>
+</div>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                       </body>
+
+
+
+</html>

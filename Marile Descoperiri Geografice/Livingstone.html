@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html>
+         <head>
+
+
+<link rel="stylesheet" type="text/css" href="harta.css"> 
+<link rel="stylesheet" type="text/css" href="altele.css"> 
+<link rel="stylesheet" type="text/css" href="meniu.css">
+<link rel="stylesheet" type="text/css" href="arhiva.css"> 
+<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+<script src='jquery.js'></script>
+
+
+<script>
+$(document).ready(function(){
+
+              $("div.ptharta").click(function(){
+
+$("div.harta").animate  ({top: '0px' },2000);
+$("div.meniu").animate  ({top: '520px' },2000);
+
+
+                                                  });
+          //Columb
+
+$('div.columb').hover(function(){
+$('div.columb').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.columb').animate({
+   opacity:'0.7' },10);
+  }); 
+
+           //James
+
+$('div.james').hover(function(){
+$('div.james').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.james').animate({
+   opacity:'0.7' },10);
+  }); 
+           //Magellan
+$('div.magellan').hover(function(){
+$('div.magellan').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.magellan').animate({
+   opacity:'0.7' },10);
+  }); 
+
+         //Minimize
+$('div.minimize').hover(function(){
+$('div.minimize').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.minimize').animate({
+   opacity:'0.7' },10);
+  }); 
+
+$('div.minimize').click(function(){
+
+$('div.harta').animate({top:'-760px'},2000);
+$('div.meniu').animate({top:'-335px'},2000);
+
+});
+
+
+
+$('div.columb').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videomagellan').fadeOut();
+$('div.b1').fadeIn(300);
+$('div.b2').fadeIn(300);
+$('div.b3').fadeIn(300);
+$('div.b4').fadeIn(300);
+});
+
+$('div.magellan').click(function(){
+$('.videocolumb').fadeOut();
+$('.videomagellan').fadeIn(300);
+$('div.b1').fadeOut();
+$('div.b2').fadeOut();
+$('div.b3').fadeOut();
+$('div.b4').fadeOut();
+
+});
+$('div.b1').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b2').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeIn(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b3').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeIn(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b4').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeIn(300);
+});
+
+
+$('div.dictionar2').click(function(){
+$('div.dictionar').show();
+$('div.dictionarclose').show();
+});
+
+$('div.dictionarclose').click(function(){
+$('div.dictionar').hide();
+$('div.dictionarclose').hide();
+});
+
+
+$('div.exploratoriimg').hover(function(){
+$('div.exploratori').show();},
+    function(){
+$('div.exploratori').hide();
+  }); 
+
+
+
+$('div.perioadeimg').hover(function(){
+$('div.perioade').show();},
+    function(){
+$('div.perioade').hide();
+  }); 
+
+
+
+$('div.obiecteimg').hover(function(){
+$('div.obiecte').show();},
+    function(){
+$('div.obiecte').hide();
+  }); 
+
+
+
+$('div.imperiiimg').hover(function(){
+$('div.imperii').show();},
+    function(){
+$('div.imperii').hide();
+  }); 
+
+
+$('div.closearhiva').click(function(){
+$('div.cadruarhiva').hide();
+});
+
+$('div.arhiva').click(function(){
+$('div.cadruarhiva').show();
+});
+
+
+
+
+$('div.dreapta1').click(function(){
+
+$('div.dreapta1').hide();
+$('div.dreapta2').show();
+$('div.stanga1').show();
+$('div.primii').animate({
+left:'5%'
+},2000);
+
+$('div.inceputul').animate({
+ left: '-100%'
+},2000);
+
+});
+
+
+
+
+
+
+$('div.dreapta2').click(function(){
+$('div.dreapta2').hide();
+$('div.dreapta3').show();
+$('div.stanga1').hide();
+$('div.stanga2').show();
+$('div.per1').animate({
+left:'5%'
+},2000);
+
+$('div.primii').animate({
+ left: '-100%'
+},2000);
+
+
+});
+
+
+$('div.dreapta3').click(function(){
+$('div.dreapta3').hide();
+$('div.dreapta4').show();
+$('div.stanga2').hide();
+$('div.stanga3').show();
+$('div.per2').animate({
+left:'5%'
+},2000);
+
+$('div.per1').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+$('div.dreapta4').click(function(){
+$('div.dreapta4').hide();
+$('div.stanga3').hide();
+$('div.stanga4').show();
+$('div.urmari').animate({
+left:'5%'
+},2000);
+
+$('div.per2').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+$('div.stanga1').click(function(){
+
+$('div.stanga1').hide();
+$('div.dreapta1').show();
+$('div.dreapta2').hide();
+$('div.inceputul').animate({
+ left: '5%'
+},2000);
+
+$('div.primii').animate({
+left:'100%'
+},2000);
+
+
+});
+
+
+$('div.stanga2').click(function(){
+$('div.stanga2').hide();
+$('div.stanga1').show();
+$('div.dreapta2').show();
+$('div.dreapta3').hide();
+$('div.primii').animate({
+ left: '5%'
+},2000);
+
+$('div.per1').animate({
+left:'100%'
+},2000);
+
+
+
+});
+
+
+$('div.stanga3').click(function(){
+$('div.stanga3').hide();
+$('div.dreapta4').hide();
+$('div.dreapta3').show();
+$('div.stanga2').show();
+$('div.per1').animate({
+ left: '5%'
+},2000);
+
+$('div.per2').animate({
+left:'100%'
+
+},2000);
+
+
+});
+
+$('div.stanga4').click(function(){
+$('div.stanga4').hide();
+$('div.stanga3').show();
+$('div.dreapta4').show();
+$('div.per2').animate({
+ left: '5%'
+},2000);
+
+$('div.urmari').animate({
+left:'100%'
+
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+</script>
+
+<script> 
+$(function(){
+	$('div.james, div.columb,div.magellan').mouseover(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Hover.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+
+$('div.james, div.columb,div.magellan').click(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Click.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+ 
+});
+</script>
+
+         </head>
+
+
+                       <body>
+
+
+
+
+
+
+
+
+
+     <div class="meniu" >
+<div class="columb"></div>
+<div class="magellan"></div>
+<div class="ptharta"></div>
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+     </div>
+
+     <div class="harta">
+<div class="minimize"></div>
+
+
+
+<video class="videocolumb" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 1.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb2" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 2.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb3" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 3.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb4" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 4.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videomagellan" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Magellan.mp4" type="video/mp4">
+  <source src="Video/Magellan.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+     </div>
+
+     <div class="cautareexploratori">
+
+<div class="cadru">
+<div class="cautarecolumb"></div>
+<div class="cautarejames"></div>
+</div>
+      </div>
+
+<div class="arhiva"></div>
+<div class="dictionar2"></div>
+<a href="INDEX.html"><div class="cautare" ></div></a>
+<a href="Test.html"><div class="test" ></div></a>
+<a href="Galerie.html"><div class="galerie" ></div></a>
+<div class="titlu"></div>
+
+
+
+
+
+
+
+<div class="dictionar" style="display:none;">
+<div class="dictionarclose"></div>
+<script type="text/javascript" src="http://www.webdex.ro/js/search-widget.js" style="position:fixed;"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="casetatext">
+<br>
+<center><div class="fundaltitlu">David Livingstone</div></center>
+<br><hr><br>
+
+<h1>1. Misiune crestina in Africa</h1><br>
+<p>Nascut in 1813 intr-o familie stricta de scotieni, David Livingstone planuia sa devina misionar Calvinist. Dupa ce a terminat scoala, dr. Livingstone era gata sa raspandeasca Evanghelia in cele mai indepartate locuri de pe pamant. A presupus intotdeauna ca va merge in China, dar o intorsatura a destinului l-a transportat pana in Africa, unde a reusit sa faca unele dintre cele mai spectaculoase descoperiri din timpul sau. </p>
+<br>
+<p>Cand bisericile britanice din anii 1830 a facut un apel pentru misionari pentru Asia, Livingstone nu a putut lasa sansa sa-i scape. Studiind timp de doi ani pentru un grad mai avansat, Livingstone era sigur ca aventura ii este garantata.</p>
+<img src="Imagini/david.png" style="float:right" width="375" height="530"></img>
+<br>
+<p>In timp ce se imbarca pentru Asia, Livingstone afla cum China se implica in razboaiele opiului, iar calatoria a fost anulata. Livingstone ar fi astept ca situatia din China sa se stabilizeze, dar totul s-a schimbat dupa o conversatie cu un misionar din Africa de Sud pe nume Robert Moffat. Moffat l-a convins pe Livingstone ca era nevoie disperata de serviciile sale misionare in Africa. In 1841, dr. Livingstone a aterizat laCape Town, in Africa de Sud.</p>
+<br>
+<p>Moffat nu il mintise, iar serviciile lui erau de mare ajutor pentru populatiile indigene. Cu cat Livingstone se devota mai mult muncii sale misionare, a devenit si avocat al anti-sclaviei. Eforturile lui impotriva sclaviei au facut din el un dusman aprig al burilor si portughezilor.</p>
+<br><hr><br>
+<h1>2. Explorator pe Continentul Negru</h1> <br>
+<p>Calatoriile lui Livingstone din sat in sat l-au adus in anumite parti ale Africii de Sud, neexplorate inca de alti europeni, starnindu-i interesul pentru interiorului Africii. Livingstone a continuat pana in nordul desertuluiKalahari, in locuri unde ceilalti europeni nu s-au avantat inca. Marea Britanie i-a recunoscut vitejia, si Livingstone a fost inclus intr-o echipa trimisa sa exploreze Lacul Ngami. Descoperirile lor au fost rasplatite cu o medalie de aur de la Royal Geographic Society. Crezand ca explorarile lui vor deschide comertul legitim in Africa si va elimina astfel comertul cu sclavi, Livingstone a spus deja celebrele cuvinte : "Voi deschide o cale spre interior, sau voi pieri".</p>
+<br>
+<p>Intre peregrinarile lui, Livingstone s-a casatorit cu fiica lui Robert Moffat, Mary, in 1845, care a calatorit alaturi de el, timp de 7 ani. Folosind ghizii Makololo din Africa, Livingstone a cartografiat o cale spre coasta Atlanticului. El a ajuns in Luanda in 1854, a vazut cascada raului Zambezi, pe care a numit-o Victoria, si a intrat in Mozambic in 1856.</p>
+<br>
+<p>Cand s-a intors in Anglia in 1856, a fost laudat ca erou national. A scris Calatorii misionare si cercetari in Africa de Sud (1857) ca un jurnal al aventurilor sale. Atat de impresionati erau europenii incat Livingstone a inceput sa tina cursuri foarte populare.</p>
+<br>
+<p>Livingstone nu a putut sta prea mult departe de Africa si si-a continuat explorarile in 1858. Intorcandu-se la fluviul Zambezi pentru o explorare mai atenta, de data aceasta a fost insotit de alti europeni, care s-au luat la lupta si echipajul a fost aproape de o rascoala. Pana in 1862, sotia sa, Mary, a murit si fiul sau nu a reusit sa ajunga in Africa, cum era planificat, deoarece era ocupat sa lupte in razboiul civil din SUA.</p>
+<img src="Imagini/david2.png" style="float:right" width="575" height="430"></img><br>
+<p>Cu toate acestea Livingstone a continuat si inainte de 1893 descoperirile sale au permis Marii Britanii sa isi revendice prima colonie interioara, Protectoratul britanic din Africa Centrala (Republica Malawi de azi). Acesta a fost momentul in care Livingstone a devenit obsedat de ideea de a gasi izvorul raului Nil. In 1866 cu un echipaj din Asia si Africa, a pornit in aceasta expeditie. Nemultumiti de conditiile de viata, o mare parte a echipajuluia dezertat si a fugit in Zanzibar. Temandu-se sa nu fie condamnati ca dezertori, echipajul a mintit ca triburile Ngonil-au ucis pe Dr. Livingstone pe drum. </p>
+<br>
+<p>In timp ce zvonurile circulau in Marea Britanie, dr. Livingstone si-a continuat drumul, ajungand pana la Lualaba, care l-a dus la raul Congo. Dar calatoria a inceput sa sa isi faca simtita prezenta asupra sanatatii sale, fiind deja ranit de un leu. Calatoriile sale in interior au insemnat expunerea la bilharzia, malarie si holera. Cand s-a intors laLacul Tanganyika in 1871, era aproape carat de pat si fara resurse medicale si alimentare.</p>
+<br>
+<p>Henry Stanley, jurnalist de la New York Herald, l-a gasit pe explorator grav bolnav la sosirea sa la Lacul Tanganyika. Trimis sa investigheze daca Livingstone murise cu adevarat, Stanley l-a intampinat cu celebra intrebare: "Dr. Livingstone, presupun?". Stanley a incercat sa-l convinga sa se intoarca cu el in Anglia, dar Livingstone a refuzat vehement, si jurnalistul s-a simtit fortat sa-l lase acolo.</p>
+<br>
+<p>Livingstone s-a recuperat cu proviziile lasate de Stanley, si si-a reluat rapid cautarea izvorului Nilului. S-a dovedit a fi singura sa calatorie incompleta, deoarece Livingstone a murit pe drum in 1873. Echipajul care i-a ramas fidel l-a gasit mort in patul lui. I-au curatat viscerele si inima, si i-au uscat corpul. Apoi l-au carat pe Livingstone pe brate, cale de peste 1000 de mile pana la coasta, unde trupul sau a fost transportat in Anglia pentru a fi inmormantat la Westminster Abbey.</p>
+<br>
+<p>Explorarile dr. Livingstone au furnizat informatii valoroase despre interiorul Africii pe care nimeni nu-l vazuse vreodata. Din pacate, descoperirile sale au dus la colonizarea inevitabila a teritoriului. Dar dr. Livingstone este de asemenea responsabil pentru incheierea comertului cu sclavi, pe care l-a detestat atat de puternic. Desi trupul neinsufletit al dr. Livingstone se gaseste in Anglia, inima lui ramane in Africa, in locul unde echipajul sau a ingropat-o la moartea sa.</p>
+
+
+
+
+
+
+
+
+
+<br><hr><br>
+<center><div class="fundaltitlu">David Livingstone</div></center>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cadruarhiva" style="display:none;">
+
+<div class="closearhiva"></div>
+
+<div class="inceputul">
+<a href="Cauze.html"><div class="fundaltema">Cauzele marilor descoperiri</div></a>
+<a href="Obiecte.html"><div class="fundaltema">Instrumente de navigatie descoperite ce au favorizat inceputul explorarilor</div></a>
+</div>
+
+<div class="primii">
+<a href="Calatori%20in%20Antichitate.html"><div class="fundaltema2">Calatori in antichitate</div></a>
+<a href="Vikingii%20descopera%20America.html"><div class="fundaltema2">Vikingii descopera America</div></a>
+<a href="Marco%20Polo.html"><div class="fundaltema2">Marco Polo calatoreste in China</div></a>
+</div>
+
+<div class="per1">
+<a href="Columb.html"><div class="fundaltema">Columb traverseaza Oceanul Atlantic</div></a>
+<a href="Vasco%20da%20Gama.html"><div class="fundaltema">Vasco da Gama ajunge in India pe mare</div></a>
+<a href="Magellan.html"><div class="fundaltema">Magellan navigheaza in jurul lumii</div></a>
+<a href="Pizarro%20cucereste%20Imperiul%20Inca.html"><div class="fundaltema">Pizzaro cucereste Imperiul Inca</div></a>
+<a href="Hernan%20Cortes.html"><div class="fundaltema">Hernan Cortes cucereste Imperiul Aztec</div></a>
+<a href="Epoca%20Exploratorilor.html"><div class="fundaltema">Scurt rezumat al epocii exploratorilor</div></a>
+</div>
+
+<div class="per2">
+
+<a href="La%20Salle%20navigheaza%20pe%20fluviul%20Mississippi.html"><div class="fundaltema2">La Salle navigheaza pe fluviul Mississippi</div></a>
+<a href="James%20Cook.html"><div class="fundaltema2">Capitanul Cook ajunge in Marile Sudului</div></a>
+<a href="Livingstone.html"><div class="fundaltema2">In Africa impreuna cu Livingstone</div></a>
+<a href="Shakleton.html"><div class="fundaltema2">Uimitoarea aventura a lui Shackleton</div></a>
+</div>
+
+<div class="urmari">
+<a href="Urmari.html"><div class="fundaltema">Castigul Europenilor</div></a>
+<a href="Portugalia.html"><div class="fundaltema">Imperiul colonial portughez</div></a>
+<a href="Spania.html"><div class="fundaltema">Imperiul colonial spaniol</div></a>
+</div>
+<div class="dreapta1"></div>
+<div class="dreapta2"></div>
+<div class="dreapta3"></div>
+<div class="dreapta4"></div>
+<div class="stanga1"></div>
+<div class="stanga2"></div>
+<div class="stanga3"></div>
+<div class="stanga4"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                       </body>
+
+
+
+</html>

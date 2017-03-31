@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<html>
+         <head>
+
+
+<link rel="stylesheet" type="text/css" href="harta.css"> 
+<link rel="stylesheet" type="text/css" href="altele.css"> 
+<link rel="stylesheet" type="text/css" href="meniu.css">
+<link rel="stylesheet" type="text/css" href="arhiva.css"> 
+<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
+<script src='jquery.js'></script>
+
+
+<script>
+$(document).ready(function(){
+
+              $("div.ptharta").click(function(){
+
+$("div.harta").animate  ({top: '0px' },2000);
+$("div.meniu").animate  ({top: '520px' },2000);
+
+
+                                                  });
+          //Columb
+
+$('div.columb').hover(function(){
+$('div.columb').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.columb').animate({
+   opacity:'0.7' },10);
+  }); 
+
+           //James
+
+$('div.james').hover(function(){
+$('div.james').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.james').animate({
+   opacity:'0.7' },10);
+  }); 
+           //Magellan
+$('div.magellan').hover(function(){
+$('div.magellan').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.magellan').animate({
+   opacity:'0.7' },10);
+  }); 
+
+         //Minimize
+$('div.minimize').hover(function(){
+$('div.minimize').animate({
+   opacity:'1.0'},10);
+    },
+    function(){
+$('div.minimize').animate({
+   opacity:'0.7' },10);
+  }); 
+
+$('div.minimize').click(function(){
+
+$('div.harta').animate({top:'-760px'},2000);
+$('div.meniu').animate({top:'-335px'},2000);
+
+});
+
+
+
+$('div.columb').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videomagellan').fadeOut();
+$('div.b1').fadeIn(300);
+$('div.b2').fadeIn(300);
+$('div.b3').fadeIn(300);
+$('div.b4').fadeIn(300);
+});
+
+$('div.magellan').click(function(){
+$('.videocolumb').fadeOut();
+$('.videomagellan').fadeIn(300);
+$('div.b1').fadeOut();
+$('div.b2').fadeOut();
+$('div.b3').fadeOut();
+$('div.b4').fadeOut();
+
+});
+$('div.b1').click(function(){
+$('.videocolumb').fadeIn(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b2').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeIn(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b3').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeIn(300);
+$('.videocolumb4').fadeOut(300);
+});
+$('div.b4').click(function(){
+$('.videocolumb').fadeOut(300);
+$('.videocolumb2').fadeOut(300);
+$('.videocolumb3').fadeOut(300);
+$('.videocolumb4').fadeIn(300);
+});
+
+
+$('div.dictionar2').click(function(){
+$('div.dictionar').show();
+$('div.dictionarclose').show();
+});
+
+$('div.dictionarclose').click(function(){
+$('div.dictionar').hide();
+$('div.dictionarclose').hide();
+});
+
+
+$('div.exploratoriimg').hover(function(){
+$('div.exploratori').show();},
+    function(){
+$('div.exploratori').hide();
+  }); 
+
+
+
+$('div.perioadeimg').hover(function(){
+$('div.perioade').show();},
+    function(){
+$('div.perioade').hide();
+  }); 
+
+
+
+$('div.obiecteimg').hover(function(){
+$('div.obiecte').show();},
+    function(){
+$('div.obiecte').hide();
+  }); 
+
+
+
+$('div.imperiiimg').hover(function(){
+$('div.imperii').show();},
+    function(){
+$('div.imperii').hide();
+  }); 
+
+
+$('div.closearhiva').click(function(){
+$('div.cadruarhiva').hide();
+});
+
+$('div.arhiva').click(function(){
+$('div.cadruarhiva').show();
+});
+
+
+
+
+$('div.dreapta1').click(function(){
+
+$('div.dreapta1').hide();
+$('div.dreapta2').show();
+$('div.stanga1').show();
+$('div.primii').animate({
+left:'5%'
+},2000);
+
+$('div.inceputul').animate({
+ left: '-100%'
+},2000);
+
+});
+
+
+
+
+
+
+$('div.dreapta2').click(function(){
+$('div.dreapta2').hide();
+$('div.dreapta3').show();
+$('div.stanga1').hide();
+$('div.stanga2').show();
+$('div.per1').animate({
+left:'5%'
+},2000);
+
+$('div.primii').animate({
+ left: '-100%'
+},2000);
+
+
+});
+
+
+$('div.dreapta3').click(function(){
+$('div.dreapta3').hide();
+$('div.dreapta4').show();
+$('div.stanga2').hide();
+$('div.stanga3').show();
+$('div.per2').animate({
+left:'5%'
+},2000);
+
+$('div.per1').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+$('div.dreapta4').click(function(){
+$('div.dreapta4').hide();
+$('div.stanga3').hide();
+$('div.stanga4').show();
+$('div.urmari').animate({
+left:'5%'
+},2000);
+
+$('div.per2').animate({
+ left: '-100%'
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+$('div.stanga1').click(function(){
+
+$('div.stanga1').hide();
+$('div.dreapta1').show();
+$('div.dreapta2').hide();
+$('div.inceputul').animate({
+ left: '5%'
+},2000);
+
+$('div.primii').animate({
+left:'100%'
+},2000);
+
+
+});
+
+
+$('div.stanga2').click(function(){
+$('div.stanga2').hide();
+$('div.stanga1').show();
+$('div.dreapta2').show();
+$('div.dreapta3').hide();
+$('div.primii').animate({
+ left: '5%'
+},2000);
+
+$('div.per1').animate({
+left:'100%'
+},2000);
+
+
+
+});
+
+
+$('div.stanga3').click(function(){
+$('div.stanga3').hide();
+$('div.dreapta4').hide();
+$('div.dreapta3').show();
+$('div.stanga2').show();
+$('div.per1').animate({
+ left: '5%'
+},2000);
+
+$('div.per2').animate({
+left:'100%'
+
+},2000);
+
+
+});
+
+$('div.stanga4').click(function(){
+$('div.stanga4').hide();
+$('div.stanga3').show();
+$('div.dreapta4').show();
+$('div.per2').animate({
+ left: '5%'
+},2000);
+
+$('div.urmari').animate({
+left:'100%'
+
+},2000);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+</script>
+
+<script> 
+$(function(){
+	$('div.james, div.columb,div.magellan').mouseover(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Hover.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+
+$('div.james, div.columb,div.magellan').click(function(){
+		$('embed').remove();
+		$('body').append('<embed src="Sunete/Click.mp3" autostart="true" hidden="true" loop="false">');     
+	}); 
+ 
+});
+</script>
+
+         </head>
+
+
+                       <body>
+
+
+
+
+
+
+
+
+
+     <div class="meniu" >
+<div class="columb"></div>
+<div class="magellan"></div>
+<div class="ptharta"></div>
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+     </div>
+
+     <div class="harta">
+<div class="minimize"></div>
+
+
+
+<video class="videocolumb" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 1.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb2" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 2.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 2.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb3" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 3.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 3.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videocolumb4" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Cristofor Columb 4.mp4" type="video/mp4">
+  <source src="Video/Cristofor Columb 4.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<video class="videomagellan" width="789.2px" height="422.6px" controls style="position:absolute;top:27px;left:31px;">
+  <source src="Video/Magellan.mp4" type="video/mp4">
+  <source src="Video/Magellan.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+     </div>
+
+     <div class="cautareexploratori">
+
+<div class="cadru">
+<div class="cautarecolumb"></div>
+<div class="cautarejames"></div>
+</div>
+      </div>
+
+<div class="arhiva"></div>
+<div class="dictionar2"></div>
+<a href="INDEX.html"><div class="cautare" ></div></a>
+<a href="Test.html"><div class="test" ></div></a>
+<a href="Galerie.html"><div class="galerie" ></div></a>
+<div class="titlu"></div>
+
+
+
+
+
+
+
+<div class="dictionar" style="display:none;">
+<div class="dictionarclose"></div>
+<script type="text/javascript" src="http://www.webdex.ro/js/search-widget.js" style="position:fixed;"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="casetatext">
+<br>
+<center><div class="fundaltitlu">La Salle navigheaza pe fluviul Mississippi</div></center>
+<br><hr><br>
+<img src="Imagini/salle.png" style="float:right" width="375" height="530"></img>
+<p>In anii 1600, de-a lungul coastei de est a Americii de Nord au fost ridicate mai multe colonii franceze si engleze. Cu toate acestea, interiorul vastului continent ramasese neexplorat. Exploratorul francez Réné-Robert de la Salle dorea sa extinda teritoriul ocupat de Franta. A alcatuit un plan: voia sa construiasca mai multe forturi pe fluviul Mississippi, al carui curs superior fusese deja explorat de catre Jacques Marquette, un misionar francez, in 1673. Ludovic al XVI-lea, regele Frantei, a aprobat propunerea lui La Salle, insa a refuzat sa-i de banii necesari. La Salle a incercat sa adune fonduri pentru expeditie vanzand blanuri. In cele din urma, si-a inceput calatoria in susul "Parintelui apelor" in februarie 1682. In aprilie 1682, a ajuns la locul de varsare a fluviului Mississippi in ocean si a pus stapanire pe tot teritoriul din jurul acestuia, in numele Frantei. A numit noua colonie Louisiana.</p>
+<p>La Salle a descoperit o multime de lucruri despre obiceiurile indienilor pe care i-a intalnit in calatoriile sale, A intreprins o a doua calatorie pe mare catre gurile fluviului Mississippi in 1687. Insa aceasta expeditie nu a avut izbanda.</p>
+
+<br><br><br><br>
+<center>
+<div class="casetajurnal">
+<center><div class="fundaltema3">"Jurnal de bord"</div></center><br><br>
+<i>
+<p>1. Aventura lui La salle a inceput la Fort Frontenac, un punct comercial francez situat pe malul Lacului Ontario. In 1678, a ajuns la Lacul Erie, trecand, in drumul sau, peste cascada Niagara.</p>
+<p>2. La Salle s-a hotarat sa vanda blanuri pentru a strange fondurile necesare expeditiei sale. A construit corabia <i>Griffon</i>. In august 1679, La Salle si echipajul său s-au indreptat spre Green Bay, adunand blanuri pe drum. Apoi corabia s-a intors pe Lacul Ontario.</p>
+<p>3. In ianuarie 1680, La Salle a ajuns intr-un sat indian de pe malul raului Illionis . La Salle le-a poruncit oamenilor sau sa inceapa sa construiasca in apropiere un fort, Fortul Crèvecœur. Intre timp, el s-a intors la Fort Frontenac pentru a aduna provizii. Fortul ridicat de oamenii sai a fost distrus, asa cum a descoperit la intoarcere. Expreditia lui La Salle pe fluviul Mississippi a inceput in 1682.</p>
+<p>4. In februarie 1682, membrii expeditiei au pornit pe Mississippi in canoe. In apropierea locului de varsare a raunlui Arkansas in Mississippi, au auzit tobele indienilor Quapaw, care i-au intampinat pe francezi si i-ai invitat la un ospat. Cand au ajuns in delta fluviului Mississippi, in aprilie 1682, La Salle a infipt in pamant o cruce de lemn si a revendicat regiunea in numele Frantei.</p>
+</i>
+</div></center><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><hr><br>
+<center><div class="fundaltitlu">La Salle navigheaza pe fluviul Mississippi</div></center>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cadruarhiva" style="display:none;">
+
+<div class="closearhiva"></div>
+
+<div class="inceputul">
+<a href="Cauze.html"><div class="fundaltema">Cauzele marilor descoperiri</div></a>
+<a href="Obiecte.html"><div class="fundaltema">Instrumente de navigatie descoperite ce au favorizat inceputul explorarilor</div></a>
+</div>
+
+<div class="primii">
+<a href="Calatori%20in%20Antichitate.html"><div class="fundaltema2">Calatori in antichitate</div></a>
+<a href="Vikingii%20descopera%20America.html"><div class="fundaltema2">Vikingii descopera America</div></a>
+<a href="Marco%20Polo.html"><div class="fundaltema2">Marco Polo calatoreste in China</div></a>
+</div>
+
+<div class="per1">
+<a href="Columb.html"><div class="fundaltema">Columb traverseaza Oceanul Atlantic</div></a>
+<a href="Vasco%20da%20Gama.html"><div class="fundaltema">Vasco da Gama ajunge in India pe mare</div></a>
+<a href="Magellan.html"><div class="fundaltema">Magellan navigheaza in jurul lumii</div></a>
+<a href="Pizarro%20cucereste%20Imperiul%20Inca.html"><div class="fundaltema">Pizzaro cucereste Imperiul Inca</div></a>
+<a href="Hernan%20Cortes.html"><div class="fundaltema">Hernan Cortes cucereste Imperiul Aztec</div></a>
+<a href="Epoca%20Exploratorilor.html"><div class="fundaltema">Scurt rezumat al epocii exploratorilor</div></a>
+</div>
+
+<div class="per2">
+
+<a href="La%20Salle%20navigheaza%20pe%20fluviul%20Mississippi.html"><div class="fundaltema2">La Salle navigheaza pe fluviul Mississippi</div></a>
+<a href="James%20Cook.html"><div class="fundaltema2">Capitanul Cook ajunge in Marile Sudului</div></a>
+<a href="Livingstone.html"><div class="fundaltema2">In Africa impreuna cu Livingstone</div></a>
+<a href="Shakleton.html"><div class="fundaltema2">Uimitoarea aventura a lui Shackleton</div></a>
+</div>
+
+<div class="urmari">
+<a href="Urmari.html"><div class="fundaltema">Castigul Europenilor</div></a>
+<a href="Portugalia.html"><div class="fundaltema">Imperiul colonial portughez</div></a>
+<a href="Spania.html"><div class="fundaltema">Imperiul colonial spaniol</div></a>
+</div>
+<div class="dreapta1"></div>
+<div class="dreapta2"></div>
+<div class="dreapta3"></div>
+<div class="dreapta4"></div>
+<div class="stanga1"></div>
+<div class="stanga2"></div>
+<div class="stanga3"></div>
+<div class="stanga4"></div>
+</div>
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                       </body>
+
+
+
+</html>
